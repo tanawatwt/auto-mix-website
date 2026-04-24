@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<title>AUTO MIX — PPTX export wrapper</title>
+<script>
+  // Define globals BEFORE iframe mounts so showJs can always find them
+  window.__pages = [
+    'index.html', 'services.html', 'about.html',
+    'gallery.html', 'blog.html', 'blog-detail.html', 'contact.html'
+  ];
+  window.__set = function (idx) {
+    var f = document.getElementById('frame');
+    if (!f) return;
+    var target = window.__pages[idx];
+    if (f.getAttribute('src') !== target) {
+      f.src = target;
+    }
+  };
+</script>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0a0a; overflow: hidden; }
+  #stage { position: fixed; inset: 0; overflow: hidden; background: #0a0a0a; }
+  #stage iframe { width: 100%; height: 100%; border: 0; display: block; background: #0a0a0a; }
+</style>
+</head>
+<body>
+<div id="stage"><iframe id="frame" src="index.html"></iframe></div>
+<script>
+(function () {
+  const frame = document.getElementById('frame');
+
+  async function prepareFrame() {
+    const doc = frame.contentDocument;
+    if (!doc) return;
+    const style = doc.createElement('style');
+    style.textContent = `
+      html, body { overflow: visible !important; height: auto !important; }
+      .floating, .floating-bar, .twk-panel, .twk-fab, .back-to-top { display: none !important; }
+      *, *::before, *::after { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; animation: none !important; transition: none !important; }
+    `;
+    doc.head.appendChild(style);
+    if (doc.fonts && doc.fonts.ready) { try { await doc.fonts.ready; } catch (e) {} }
+    const start = Date.now();
+    while (Date.now() - start < 9000) {
+      const r = doc.getElementById('root');
+      if (r && r.children.length > 0) break;
+      await new Promise((r) => setTimeout(r, 120));
+    }
+    const imgs = Array.from(doc.images || []);
+    await Promise.all(imgs.map((img) => {
+      if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+      return new Promise((res) => {
+        const d = () => res();
+        img.addEventListener('load', d, { once: true });
+        img.addEventListener('error', d, { once: true });
+        setTimeout(d, 5000);
+      });
+    }));
+    await new Promise((r) => setTimeout(r, 500));
+  }
+
+  frame.addEventListener('load', async () => {
+    window.__ready = false;
+    await prepareFrame();
+    window.__ready = true;
+  });
+})();
+</script>
+</body>
+</html>

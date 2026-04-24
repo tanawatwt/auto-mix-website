@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<title>AUTO MIX — Full site PDF</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body {
+    margin: 0; padding: 0;
+    background: #0a0a0a;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .toolbar {
+    position: sticky; top: 0; z-index: 10000;
+    background: rgba(10,10,10,.92); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,193,7,.2);
+    color: #fff; font-family: system-ui, -apple-system, sans-serif;
+    padding: 12px 20px; display: flex; gap: 12px; align-items: center;
+  }
+  .toolbar strong { color: #FFC107; letter-spacing: .04em; }
+  .toolbar .status { opacity: .7; font-size: 13px; margin-left: auto; }
+  .toolbar button {
+    background: #FFC107; color: #000; font-weight: 700;
+    border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer;
+    font-family: inherit; font-size: 14px;
+  }
+  .toolbar button:disabled { opacity: .4; cursor: wait; }
+  .toolbar .bar { flex: 1; height: 6px; max-width: 300px; background: rgba(255,193,7,.12); border-radius: 3px; overflow: hidden; }
+  .toolbar .bar > div { height: 100%; background: #FFC107; width: 0%; transition: width .3s ease; }
+
+  .page-slot {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #0a0a0a;
+    break-after: page;
+    page-break-after: always;
+    border: 0;
+  }
+  .page-slot:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  .page-slot iframe {
+    display: block; width: 100%; border: 0; background: #0a0a0a;
+  }
+
+  @page { size: A4 portrait; margin: 0; }
+
+  @media print {
+    .toolbar { display: none !important; }
+    html, body { background: #0a0a0a !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar">
+    <strong>AUTO MIX</strong>
+    <span>Print preview</span>
+    <div class="bar"><div id="bar"></div></div>
+    <span class="status" id="status">Loading…</span>
+    <button id="printBtn" disabled>Print / Save PDF</button>
+  </div>
+
+  <div id="slots"></div>
+
+  <script>
+  (function () {
+    const pages = [
+      { src: 'index.html',       label: 'หน้าแรก (Home)' },
+      { src: 'services.html',    label: 'บริการ (Services)' },
+      { src: 'about.html',       label: 'เกี่ยวกับเรา (About)' },
+      { src: 'gallery.html',     label: 'ผลงาน (Gallery)' },
+      { src: 'blog.html',        label: 'บทความ (Blog)' },
+      { src: 'blog-detail.html', label: 'บทความ (Detail)' },
+      { src: 'contact.html',     label: 'ติดต่อ (Contact)' },
+    ];
+
+    const slots = document.getElementById('slots');
+    const status = document.getElementById('status');
+    const bar = document.getElementById('bar');
+    const printBtn = document.getElementById('printBtn');
+
+    const frames = pages.map((p) => {
+      const wrap = document.createElement('div');
+      wrap.className = 'page-slot';
+      const frame = document.createElement('iframe');
+      frame.src = p.src;
+      frame.setAttribute('scrolling', 'no');
+      frame.style.height = '1200px';
+      wrap.appendChild(frame);
+      slots.appendChild(wrap);
+      return { frame, label: p.label };
+    });
+
+    function measure(frame) {
+      try {
+        const doc = frame.contentDocument;
+        if (!doc) return null;
+        return Math.max(
+          doc.body ? doc.body.scrollHeight : 0,
+          doc.documentElement ? doc.documentElement.scrollHeight : 0
+        );
+      } catch (e) { return null; }
+    }
+
+    function sizeFrame(frame) {
+      const h = measure(frame);
+      if (h && h > 100) frame.style.height = (h + 24) + 'px';
+    }
+
+    function waitForFrame(frame) {
+      return new Promise((resolve) => {
+        let done = false;
+        const finish = () => { if (!done) { done = true; resolve(); } };
+
+        const onLoad = async () => {
+          try {
+            const doc = frame.contentDocument;
+            if (!doc) return finish();
+
+            // Inject scoped overrides so content flows and floating chrome hides
+            const style = doc.createElement('style');
+            style.textContent = `
+              html, body { overflow: visible !important; height: auto !important; background: var(--bg, #0a0a0a) !important; }
+              .floating, .floating-bar, .twk-panel, .twk-fab, .back-to-top { display: none !important; }
+              *, *::before, *::after { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; animation: none !important; transition: none !important; }
+            `;
+            doc.head.appendChild(style);
+
+            // Wait for fonts
+            if (doc.fonts && doc.fonts.ready) {
+              try { await doc.fonts.ready; } catch (e) {}
+            }
+            // Wait for React root
+            const start = Date.now();
+            while (Date.now() - start < 9000) {
+              const r = doc.getElementById('root');
+              if (r && r.children.length > 0) break;
+              await new Promise((r) => setTimeout(r, 120));
+            }
+            // Wait for images
+            const imgs = Array.from(doc.images || []);
+            await Promise.all(imgs.map((img) => {
+              if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+              return new Promise((res) => {
+                const d = () => res();
+                img.addEventListener('load', d, { once: true });
+                img.addEventListener('error', d, { once: true });
+                setTimeout(d, 5000);
+              });
+            }));
+            await new Promise((r) => setTimeout(r, 500));
+            sizeFrame(frame);
+          } catch (e) {}
+          finish();
+        };
+
+        if (frame.contentDocument && frame.contentDocument.readyState === 'complete') {
+          onLoad();
+        } else {
+          frame.addEventListener('load', onLoad, { once: true });
+        }
+        setTimeout(finish, 18000);
+      });
+    }
+
+    (async () => {
+      for (let i = 0; i < frames.length; i++) {
+        status.textContent = `Loading ${i + 1}/${frames.length} — ${frames[i].label}`;
+        await waitForFrame(frames[i].frame);
+        bar.style.width = Math.round(((i + 1) / frames.length) * 100) + '%';
+      }
+      // Final settle passes
+      for (let k = 0; k < 4; k++) {
+        await new Promise((r) => setTimeout(r, 500));
+        frames.forEach((f) => sizeFrame(f.frame));
+      }
+      status.textContent = 'พร้อมพิมพ์ — Ready';
+      printBtn.disabled = false;
+    })();
+
+    printBtn.addEventListener('click', () => window.print());
+    window.addEventListener('resize', () => frames.forEach((f) => sizeFrame(f.frame)));
+  })();
+  </script>
+</body>
+</html>
