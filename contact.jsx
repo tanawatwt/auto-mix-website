@@ -79,11 +79,8 @@ function ContactPage() {
                     <option value="" disabled>เลือกบริการ</option>
                     <option>เปลี่ยนน้ำมันเครื่อง</option>
                     <option>ซ่อมช่วงล่าง</option>
-                    <option>ซ่อมเบรค</option>
-                    <option>เปลี่ยนแบตเตอรี่</option>
                     <option>ฟรัชชิ่งเกียร์</option>
                     <option>ขัดไฟหน้า</option>
-                    <option>ตรวจเช็คสภาพรถ</option>
                     <option>อื่น ๆ</option>
                   </select>
                 </div>

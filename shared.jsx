@@ -40,11 +40,19 @@ function TopBar() {
   );
 }
 
+const NAV_SERVICES = [
+  { href: 'oil-change-korat.html', label: 'เปลี่ยนน้ำมันเครื่อง' },
+  { href: 'suspension-korat.html', label: 'ซ่อมช่วงล่างรถยนต์' },
+  { href: 'transmission-flush-korat.html', label: 'ฟรัชชิ่งเกียร์' },
+  { href: 'headlight-restoration-korat.html', label: 'ขัดไฟหน้ารถยนต์' },
+];
+
 function Header({ active }) {
   const [open, setOpen] = React.useState(false);
+  const [subOpen, setSubOpen] = React.useState(false);
   const links = [
     { href: 'index.html', label: 'หน้าแรก', key: 'home' },
-    { href: 'services.html', label: 'บริการ', key: 'services' },
+    { href: 'services.html', label: 'บริการ', key: 'services', children: NAV_SERVICES },
     { href: 'gallery.html', label: 'ผลงาน', key: 'gallery' },
     { href: 'blog.html', label: 'บทความ', key: 'blog' },
     { href: 'about.html', label: 'เกี่ยวกับเรา', key: 'about' },
@@ -57,7 +65,22 @@ function Header({ active }) {
           <img src="assets/logo.jpg" alt="AUTO MIX — ออโต้มิกซ์ ศูนย์บริการรถยนต์โคราช" className="brand-logo" />
         </a>
         <nav className={`nav ${open ? 'open' : ''}`}>
-          {links.map(l => (
+          {links.map(l => l.children ? (
+            <div key={l.key} className="nav-item has-sub">
+              <div className="nav-item-row">
+                <a href={l.href} className={active === l.key ? 'active' : ''}>{l.label}</a>
+                <button type="button" className="nav-sub-toggle" aria-label="เมนูบริการย่อย" aria-expanded={subOpen} onClick={() => setSubOpen(v => !v)}>
+                  <svg className="nav-caret" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+              </div>
+              <div className={`nav-sub ${subOpen ? 'open' : ''}`}>
+                {l.children.map(c => (
+                  <a key={c.href} href={c.href} className={active === c.href ? 'active' : ''}>{c.label}</a>
+                ))}
+                <a href="services.html" className="nav-sub-all">ดูบริการทั้งหมด →</a>
+              </div>
+            </div>
+          ) : (
             <a key={l.key} href={l.href} className={active === l.key ? 'active' : ''}>{l.label}</a>
           ))}
         </nav>
@@ -75,7 +98,7 @@ function PromoStrip() {
   const items = [
     'ศูนย์บริการรถยนต์มาตรฐาน โคราช',
     'LIQUI MOLY • ZIC • MOTUL • Nexzter',
-    'เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง เบรค',
+    'เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้า',
     'เปิดทุกวัน 08:30 – 17:30 น.',
     'โทร 099-031-9888',
   ];
@@ -115,7 +138,7 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <img src="assets/logo.jpg" alt="AUTO MIX" />
-            <p>ศูนย์บริการรถยนต์มาตรฐาน โคราช เปลี่ยนน้ำมันเครื่อง ของเหลว ช่วงล่าง เบรค แบตเตอรี่ และจำหน่ายผลิตภัณฑ์ดูแลรถยนต์ โดยช่างผู้มีประสบการณ์</p>
+            <p>ศูนย์บริการรถยนต์มาตรฐาน โคราช เปลี่ยนน้ำมันเครื่อง ช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้า และจำหน่ายผลิตภัณฑ์ดูแลรถยนต์ โดยช่างผู้มีประสบการณ์</p>
             <div className="footer-social">
               <a href="#" aria-label="Facebook"><Icon.FB /></a>
               <a href="#" aria-label="LINE"><Icon.Line /></a>
@@ -124,12 +147,10 @@ function Footer() {
           <div className="footer-col">
             <h4>บริการของเรา</h4>
             <ul>
-              <li><a href="services.html#oil">เปลี่ยนน้ำมันเครื่อง</a></li>
-              <li><a href="services.html#suspension">ซ่อมช่วงล่าง</a></li>
-              <li><a href="services.html#brake">ซ่อมเบรครถยนต์</a></li>
-              <li><a href="services.html#battery">เปลี่ยนแบตเตอรี่</a></li>
-              <li><a href="services.html#flushing">ฟรัชชิ่งเกียร์</a></li>
-              <li><a href="services.html#headlight">ขัดไฟหน้ารถยนต์</a></li>
+              <li><a href="oil-change-korat.html">เปลี่ยนน้ำมันเครื่อง โคราช</a></li>
+              <li><a href="suspension-korat.html">ซ่อมช่วงล่าง โคราช</a></li>
+              <li><a href="transmission-flush-korat.html">ฟรัชชิ่งเกียร์ โคราช</a></li>
+              <li><a href="headlight-restoration-korat.html">ขัดไฟหน้ารถยนต์ โคราช</a></li>
             </ul>
           </div>
           <div className="footer-col">

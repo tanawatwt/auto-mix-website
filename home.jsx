@@ -10,7 +10,7 @@ function Hero({ variant = 'split' }) {
           <div style={{maxWidth: 820}}>
             <div className="hero-tagline"><span className="hero-tagline-dot"></span>ศูนย์บริการรถยนต์มาตรฐาน โคราช</div>
             <h1>ดูแลรถคุณ<br/>ด้วยช่างมืออาชีพ <span className="accent">โคราช</span></h1>
-            <p className="hero-sub" style={{margin: '0 auto 32px'}}>เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง ซ่อมเบรค ฟรัชชิ่งเกียร์ เปลี่ยนแบตเตอรี่ ใช้ผลิตภัณฑ์มาตรฐานระดับโลก LIQUI MOLY • ZIC • MOTUL</p>
+            <p className="hero-sub" style={{margin: '0 auto 32px'}}>เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้ารถยนต์ ใช้ผลิตภัณฑ์มาตรฐานระดับโลก LIQUI MOLY • ZIC • MOTUL</p>
             <div className="hero-ctas" style={{justifyContent: 'center'}}>
               <a href="tel:0990319888" className="btn btn-lg btn-primary"><Icon.Phone /> โทรจองคิว 099-031-9888</a>
               <a href="https://lin.ee/LIl9L9F" className="btn btn-lg btn-outline"><Icon.Line /> จองผ่าน LINE</a>
@@ -61,7 +61,7 @@ function Hero({ variant = 'split' }) {
           <div className="hero-tagline"><span className="hero-tagline-dot"></span>ศูนย์บริการรถยนต์มาตรฐาน โคราช</div>
           <h1>บริการรถยนต์<br/>ครบวงจร <span className="accent">โคราช</span><br/>โดยช่างมืออาชีพ</h1>
           <p className="hero-sub">
-            เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง ซ่อมเบรครถยนต์ ฟรัชชิ่งเกียร์ เปลี่ยนแบตเตอรี่ ใช้ผลิตภัณฑ์มาตรฐานระดับโลก LIQUI MOLY • ZIC • MOTUL พร้อมทีมช่างที่มีประสบการณ์สูง
+            เปลี่ยนน้ำมันเครื่อง ซ่อมช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้ารถยนต์ ใช้ผลิตภัณฑ์มาตรฐานระดับโลก LIQUI MOLY • ZIC • MOTUL พร้อมทีมช่างที่มีประสบการณ์สูง
           </p>
           <div className="hero-ctas">
             <a href="tel:0990319888" className="btn btn-lg btn-primary"><Icon.Phone /> โทรจองคิว 099-031-9888</a>
@@ -104,7 +104,7 @@ function WhyChoose() {
     { icon: <Icon.Shield />, title: 'ช่างผู้มีประสบการณ์', desc: 'ทีมช่างที่ผ่านงานรถยุโรปและรถเอเชียมาอย่างยาวนาน', num: '01' },
     { icon: <Icon.Tool />, title: 'ผลิตภัณฑ์มาตรฐานโลก', desc: 'LIQUI MOLY, ZIC, MOTUL, NGK, Repsol ของแท้จากตัวแทนจำหน่าย', num: '02' },
     { icon: <Icon.Price />, title: 'แจ้งราคาตรงไปตรงมา', desc: 'ไม่มีบวกเพิ่ม ไม่มีค่าใช้จ่ายแอบแฝง แจ้งราคาก่อนเริ่มงาน', num: '03' },
-    { icon: <Icon.Star />, title: 'บริการครบวงจร', desc: 'น้ำมันเครื่อง ช่วงล่าง เบรค แบตเตอรี่ รถยุโรป-เอเชีย ในที่เดียว', num: '04' },
+    { icon: <Icon.Star />, title: 'บริการครบวงจร', desc: 'น้ำมันเครื่อง ช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้า รถยุโรป-เอเชีย ในที่เดียว', num: '04' },
   ];
   return (
     <section className="sec why">
@@ -139,7 +139,7 @@ function Services() {
       title: 'เปลี่ยนน้ำมันเครื่อง โคราช',
       desc: 'เปลี่ยนถ่ายน้ำมันเครื่อง ของเหลวทุกชนิด ใช้ผลิตภัณฑ์ LIQUI MOLY, ZIC, MOTUL',
       bullets: ['ตรวจเช็คเครื่องยนต์ฟรี', 'เลือกสเปคตามรุ่นรถ', 'รถยุโรป / รถเอเชีย'],
-      href: 'services.html#oil'
+      href: 'oil-change-korat.html'
     },
     {
       icon: <Icon.Suspension />, featured: true,
@@ -147,36 +147,22 @@ function Services() {
       title: 'ซ่อมช่วงล่าง โคราช',
       desc: 'ตรวจเช็คและซ่อมช่วงล่างครบวงจร เปลี่ยนโช้คอัพ ลูกหมาก ปีกนก',
       bullets: ['ตรวจเช็คช่วงล่างฟรี', 'อะไหล่มาตรฐาน', 'รับประกันคุณภาพ'],
-      href: 'services.html#suspension'
+      href: 'suspension-korat.html'
     },
     {
-      icon: <Icon.Brake />, featured: true,
-      tag: 'ความปลอดภัย',
-      title: 'ซ่อมเบรครถยนต์ โคราช',
-      desc: 'เปลี่ยนผ้าเบรค จานเบรค น้ำมันเบรค ซ่อมแม่ปั๊มเบรคและลูกสูบเบรค',
-      bullets: ['ผ้าเบรคคุณภาพสูง', 'ฟรัชชิ่งน้ำมันเบรค', 'รับประกันการติดตั้ง'],
-      href: 'services.html#brake'
-    },
-    {
-      icon: <Icon.Battery />,
-      title: 'เปลี่ยนแบตเตอรี่',
-      desc: 'แบตเตอรี่คุณภาพสูง มีให้เลือกตามรุ่นรถ พร้อมตรวจสภาพระบบไฟฟ้า',
-      bullets: ['BEC, TTW และแบรนด์มาตรฐาน', 'รับประกัน', 'ตรวจสภาพฟรี'],
-      href: 'services.html#battery'
-    },
-    {
-      icon: <Icon.Gear />,
+      icon: <Icon.Gear />, featured: true,
+      tag: 'ระบบเกียร์',
       title: 'ฟรัชชิ่งเกียร์',
       desc: 'ฟรัชชิ่งระบบเกียร์ เปลี่ยนน้ำมันเกียร์ เปลี่ยนกรองเกียร์และปะเก็น',
       bullets: ['ยืดอายุเกียร์', 'เพิ่มประสิทธิภาพ', 'สำหรับรถทุกรุ่น'],
-      href: 'services.html#flushing'
+      href: 'transmission-flush-korat.html'
     },
     {
       icon: <Icon.Headlight />,
       title: 'ขัดไฟหน้ารถยนต์',
       desc: 'ขัดไฟหน้ารถให้ใสเหมือนใหม่ เพิ่มความปลอดภัยในการขับขี่เวลากลางคืน',
       bullets: ['ไฟหน้าใสเหมือนใหม่', 'ขัดทั้ง 2 ข้าง', 'เคลือบป้องกัน UV'],
-      href: 'services.html#headlight'
+      href: 'headlight-restoration-korat.html'
     },
   ];
   return (
@@ -281,21 +267,15 @@ function Expertise() {
             <a href="blog.html" className="link">อ่านต่อ <Icon.ArrowRight /></a>
           </div>
           <div className="exp-card">
-            <div className="exp-tag">ระบบเบรค</div>
-            <h3>ทำไมต้องฟรัชชิ่งน้ำมันเบรค?</h3>
-            <p>น้ำมันเบรคเสื่อมสภาพตามเวลา การฟรัชชิ่งช่วยให้ระบบเบรคทำงานได้ดีและปลอดภัย</p>
-            <a href="blog.html" className="link">อ่านต่อ <Icon.ArrowRight /></a>
-          </div>
-          <div className="exp-card">
             <div className="exp-tag">เกียร์</div>
             <h3>ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์?</h3>
             <p>สองบริการนี้ไม่เหมือนกัน เข้าใจความแตกต่างก่อนตัดสินใจ</p>
             <a href="blog.html" className="link">อ่านต่อ <Icon.ArrowRight /></a>
           </div>
           <div className="exp-card">
-            <div className="exp-tag">แบตเตอรี่</div>
-            <h3>สังเกตอย่างไรว่าแบตเตอรี่ควรเปลี่ยน</h3>
-            <p>สตาร์ทช้า ไฟสัญญาณเตือน อายุการใช้งานเกิน 2 ปี เป็นสัญญาณที่ต้องตรวจสอบ</p>
+            <div className="exp-tag">ขัดไฟหน้า</div>
+            <h3>ขัดไฟหน้ารถยนต์ช่วยอะไรบ้าง</h3>
+            <p>ไฟหน้าที่เหลืองหรือเป็นฝ้าทำให้แสงสว่างน้อยลง การขัดและเคลือบ UV ช่วยเพิ่มความสว่างและความปลอดภัย</p>
             <a href="blog.html" className="link">อ่านต่อ <Icon.ArrowRight /></a>
           </div>
         </div>
@@ -308,7 +288,7 @@ function GalleryPreview() {
   const items = [
     { src: 'images/hero/01-bmw-shopfloor.jpg', cls: 'wide tall', label: 'Workshop — AUTO MIX' },
     { src: 'images/oil/04-zic-x7-hero.jpg', cls: '', label: 'เปลี่ยนน้ำมันเครื่อง' },
-    { src: 'images/brake/02-brake-work.jpg', cls: '', label: 'ซ่อมเบรค' },
+    { src: 'images/headlight/02-automix-after.jpg', cls: '', label: 'ขัดไฟหน้ารถยนต์' },
     { src: 'images/products/04-team-liquimoly-rack.jpg', cls: 'wide', label: 'LIQUI MOLY display' },
     { src: 'images/suspension/01-wheel-check.jpg', cls: '', label: 'ตรวจเช็คช่วงล่าง' },
     { src: 'images/transmission/01-liqui-moly-flush-machine.jpg', cls: '', label: 'ฟรัชชิ่งเกียร์' },
@@ -340,7 +320,7 @@ function Testimonials() {
   const reviews = [
     { name: 'คุณสมชาย', meta: 'รถ BMW • ลูกค้าประจำ', text: 'บริการดีมาก ช่างมืออาชีพ แจ้งราคาตรงไปตรงมา ใช้น้ำมัน LIQUI MOLY ของแท้ เครื่องนิ่งขึ้นจริง ๆ', stars: 5, initial: 'ส' },
     { name: 'คุณปิยะ', meta: 'รถ Honda Civic', text: 'เปลี่ยนช่วงล่างที่นี่ ช่างอธิบายทุกขั้นตอน ไม่บวกงานเพิ่ม ราคาสมเหตุสมผล จะกลับมาใช้บริการอีกแน่นอน', stars: 5, initial: 'ป' },
-    { name: 'คุณนิภา', meta: 'รถ Toyota Camry', text: 'ซ่อมเบรคกับที่นี่เป็นครั้งที่ 3 แล้ว พนักงานสุภาพ งานละเอียด ร้านสะอาดเป็นระเบียบ แนะนำคนโคราชให้มาใช้บริการ', stars: 5, initial: 'น' },
+    { name: 'คุณนิภา', meta: 'รถ Toyota Camry', text: 'ขัดไฟหน้าและฟรัชชิ่งเกียร์กับที่นี่ พนักงานสุภาพ งานละเอียด ร้านสะอาดเป็นระเบียบ แนะนำคนโคราชให้มาใช้บริการ', stars: 5, initial: 'น' },
   ];
   return (
     <section className="sec testimonials">
@@ -406,19 +386,19 @@ function BlogPreview() {
               </div>
             </a>
             <a href="blog-detail.html" className="blog-small">
-              <div className="media"><img className="bg" src="images/brake/02-brake-work.jpg" alt="ฟรัชชิ่งเบรค" loading="lazy" /></div>
+              <div className="media"><img className="bg" src="images/transmission/01-liqui-moly-flush-machine.jpg" alt="ฟรัชชิ่งเกียร์" loading="lazy" /></div>
               <div className="body">
-                <span className="blog-cat">เบรค</span>
-                <h4>ฟรัชชิ่งน้ำมันเบรคช่วยเพิ่มความปลอดภัย</h4>
-                <div className="meta">18 เม.ย. 2026 • 3 นาที</div>
+                <span className="blog-cat">เกียร์</span>
+                <h4>ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์อย่างไร</h4>
+                <div className="meta">18 เม.ย. 2026 • 5 นาที</div>
               </div>
             </a>
             <a href="blog-detail.html" className="blog-small">
-              <div className="media"><img className="bg" src="images/workshop/01-mechanic-dipstick.jpg" alt="เตรียมรถก่อนเดินทาง" loading="lazy" /></div>
+              <div className="media"><img className="bg" src="images/headlight/02-automix-after.jpg" alt="ขัดไฟหน้ารถยนต์" loading="lazy" /></div>
               <div className="body">
-                <span className="blog-cat">เดินทาง</span>
-                <h4>เช็คลิสต์ก่อนออกเดินทางไกล</h4>
-                <div className="meta">15 เม.ย. 2026 • 5 นาที</div>
+                <span className="blog-cat">ขัดไฟหน้า</span>
+                <h4>ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่</h4>
+                <div className="meta">15 เม.ย. 2026 • 4 นาที</div>
               </div>
             </a>
           </div>

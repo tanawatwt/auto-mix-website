@@ -12,21 +12,18 @@ function BlogPage() {
   const cats = [
     { id: 'all', label: 'ทั้งหมด' },
     { id: 'oil', label: 'น้ำมันเครื่อง' },
-    { id: 'brake', label: 'ระบบเบรค' },
     { id: 'suspension', label: 'ช่วงล่าง' },
-    { id: 'battery', label: 'แบตเตอรี่' },
+    { id: 'gear', label: 'ฟรัชชิ่งเกียร์' },
+    { id: 'headlight', label: 'ขัดไฟหน้า' },
     { id: 'care', label: 'ดูแลรถ' },
   ];
   const posts = [
     { cat: 'oil', catLabel: 'น้ำมันเครื่อง', img: 'images/oil/10-liqui-moly-night.jpg', title: 'เลือกน้ำมันเครื่องอย่างไรให้เหมาะกับรถยุโรปและรถเอเชีย', excerpt: 'เรียนรู้เรื่องเบอร์ความหนืด ประเภทเครื่อง พฤติกรรมการขับขี่ ที่มีผลต่อการเลือกน้ำมัน', date: '24 เม.ย. 2026', read: '6 นาที' },
     { cat: 'suspension', catLabel: 'ช่วงล่าง', img: 'images/suspension/01-wheel-check.jpg', title: '5 สัญญาณที่บอกว่าช่วงล่างของรถคุณควรตรวจเช็ค', excerpt: 'เสียงดังผิดปกติ ยางสึกไม่เท่ากัน การเกาะถนนไม่มั่นคง อย่ามองข้ามสัญญาณเหล่านี้', date: '22 เม.ย. 2026', read: '4 นาที' },
-    { cat: 'brake', catLabel: 'ระบบเบรค', img: 'images/brake/02-brake-work.jpg', title: 'ทำไมฟรัชชิ่งน้ำมันเบรคถึงสำคัญต่อความปลอดภัย', excerpt: 'น้ำมันเบรคที่เสื่อมสภาพส่งผลต่อประสิทธิภาพของระบบเบรค มาดูกันว่าควรเปลี่ยนเมื่อไร', date: '18 เม.ย. 2026', read: '3 นาที' },
-    { cat: 'oil', catLabel: 'เกียร์', img: 'images/transmission/01-liqui-moly-flush-machine.jpg', title: 'ฟรัชชิ่งเกียร์ vs. เปลี่ยนน้ำมันเกียร์ ต่างกันอย่างไร', excerpt: 'เข้าใจความแตกต่างของสองบริการนี้ เพื่อเลือกใช้ให้เหมาะกับสภาพรถของคุณ', date: '12 เม.ย. 2026', read: '5 นาที' },
-    { cat: 'care', catLabel: 'ก่อนเดินทาง', img: 'images/workshop/01-mechanic-dipstick.jpg', title: 'เช็คลิสต์เตรียมรถก่อนออกเดินทางไกล', excerpt: 'น้ำมันเครื่อง เบรค ยาง แบตเตอรี่ น้ำหล่อเย็น ตรวจก่อนออกเดินทางเพื่อความปลอดภัย', date: '8 เม.ย. 2026', read: '7 นาที' },
-    { cat: 'battery', catLabel: 'แบตเตอรี่', img: 'images/workshop/17-fortuner-hood-open.jpg', title: 'สังเกตอย่างไรว่าแบตเตอรี่รถยนต์ของคุณควรเปลี่ยน', excerpt: 'สตาร์ทช้า ไฟสัญญาณเตือน อายุใช้งานสั้น สัญญาณบอกว่าแบตควรตรวจสอบแล้ว', date: '5 เม.ย. 2026', read: '4 นาที' },
+    { cat: 'gear', catLabel: 'ฟรัชชิ่งเกียร์', img: 'images/transmission/01-liqui-moly-flush-machine.jpg', title: 'ฟรัชชิ่งเกียร์ vs. เปลี่ยนน้ำมันเกียร์ ต่างกันอย่างไร', excerpt: 'เข้าใจความแตกต่างของสองบริการนี้ เพื่อเลือกใช้ให้เหมาะกับสภาพรถของคุณ', date: '18 เม.ย. 2026', read: '5 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', img: 'images/headlight/05-ceramic-before-after.jpg', title: 'ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่ ช่วยเรื่องอะไรบ้าง', excerpt: 'ไฟหน้าที่เหลืองหรือเป็นฝ้าทำให้แสงสว่างน้อยลง การขัดและเคลือบ UV เพิ่มความปลอดภัยตอนกลางคืน', date: '12 เม.ย. 2026', read: '4 นาที' },
     { cat: 'oil', catLabel: 'ผลิตภัณฑ์', img: 'images/products/04-team-liquimoly-rack.jpg', title: 'LIQUI MOLY ZIC และ MOTUL แตกต่างกันอย่างไร', excerpt: 'เปรียบเทียบน้ำมันพรีเมี่ยมแต่ละแบรนด์ และเข้าใจว่าน้ำมันที่ได้มาตรฐานสำคัญอย่างไร', date: '1 เม.ย. 2026', read: '6 นาที' },
-    { cat: 'care', catLabel: 'ดูแลรถ', img: 'images/headlight/02-automix-after.jpg', title: 'วิธีดูแลรถในหน้าฝนให้ปลอดภัยและอายุยาว', excerpt: 'ตั้งแต่ที่ปัดน้ำฝน ระบบเบรค ไฟส่องทาง ถึงการทำความสะอาดรถ', date: '28 มี.ค. 2026', read: '5 นาที' },
-    { cat: 'brake', catLabel: 'ระบบเบรค', img: 'images/brake/01-brake-inspect.jpg', title: 'ผ้าเบรคหมด สังเกตอย่างไรและควรเปลี่ยนเมื่อไร', excerpt: 'เสียงครูดเวลาเบรค เบรคลึก ระยะเบรคยาว สัญญาณที่ต้องเปลี่ยนผ้าเบรค', date: '24 มี.ค. 2026', read: '4 นาที' },
+    { cat: 'care', catLabel: 'ดูแลรถ', img: 'images/headlight/02-automix-after.jpg', title: 'วิธีดูแลรถในหน้าฝนให้ปลอดภัยและอายุยาว', excerpt: 'ตั้งแต่ที่ปัดน้ำฝน ช่วงล่าง ไฟส่องทาง ถึงการทำความสะอาดรถ', date: '28 มี.ค. 2026', read: '5 นาที' },
   ];
   const filtered = cat === 'all' ? posts : posts.filter(p => p.cat === cat);
   const featured = filtered[0];

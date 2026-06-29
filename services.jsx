@@ -16,8 +16,6 @@ function ServiceQuickNav() {
   const items = [
     { id: 'oil', label: 'เปลี่ยนน้ำมันเครื่อง' },
     { id: 'suspension', label: 'ซ่อมช่วงล่าง' },
-    { id: 'brake', label: 'ซ่อมเบรค' },
-    { id: 'battery', label: 'แบตเตอรี่' },
     { id: 'flushing', label: 'ฟรัชชิ่งเกียร์' },
     { id: 'headlight', label: 'ขัดไฟหน้า' },
   ];
@@ -32,7 +30,7 @@ function ServiceQuickNav() {
   );
 }
 
-function ServiceBlock({ id, eyebrow, title, desc, bullets, benefits, image, reverse, seoH2 }) {
+function ServiceBlock({ id, eyebrow, title, desc, bullets, benefits, image, reverse, seoH2, detailHref }) {
   return (
     <section className="sec" id={id} style={{scrollMarginTop:'180px'}}>
       <div className="container">
@@ -63,6 +61,7 @@ function ServiceBlock({ id, eyebrow, title, desc, bullets, benefits, image, reve
             <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
               <a href="tel:0990319888" className="btn btn-primary"><Icon.Phone /> โทรจองคิว</a>
               <a href="https://lin.ee/LIl9L9F" className="btn btn-outline"><Icon.Line /> สอบถามผ่าน LINE</a>
+              {detailHref && <a href={detailHref} className="btn btn-ghost">ดูรายละเอียด <Icon.ArrowRight /></a>}
             </div>
           </div>
           <div style={{order: reverse ? 1 : 2}}>
@@ -75,8 +74,6 @@ function ServiceBlock({ id, eyebrow, title, desc, bullets, benefits, image, reve
               <div style={{position:'absolute',bottom:16,left:16,background:'rgba(0,0,0,.8)',backdropFilter:'blur(8px)',padding:'8px 12px',borderRadius:8,fontSize:12,border:'1px solid var(--border-strong)',zIndex:2}}>
                 {id === 'oil' && 'LIQUI MOLY • ZIC • MOTUL'}
                 {id === 'suspension' && 'ครอบคลุม EU / ASIA'}
-                {id === 'brake' && 'ความปลอดภัยสูงสุด'}
-                {id === 'battery' && 'BEC • TTW มาตรฐาน'}
                 {id === 'flushing' && 'ยืดอายุระบบเกียร์'}
                 {id === 'headlight' && 'เคลือบ UV เคลือบเงา'}
               </div>
@@ -177,7 +174,7 @@ function ServicesPage() {
       desc:'เปลี่ยนถ่ายน้ำมันเครื่องรถยนต์ทุกรุ่น ทั้งรถยุโรปและรถเอเชีย เลือกสเปคน้ำมันที่เหมาะกับเครื่องยนต์ พร้อมเปลี่ยนกรองน้ำมันเครื่องและตรวจเช็คระดับของเหลวทั้งหมด',
       bullets:['น้ำมันแท้จากตัวแทน','เปลี่ยนกรองน้ำมันเครื่อง','ตรวจของเหลวทั้งระบบ','ช่างเลือกสเปคให้ตามรุ่นรถ','ล้างเครื่องยนต์ (Engine Flush)','รับประกันคุณภาพงาน'],
       benefits:'ฟรีตรวจเช็คสภาพรถ 20 จุด เมื่อใช้บริการเปลี่ยนน้ำมันเครื่องในโปรโมชั่นที่กำหนด',
-      image:'images/oil/06-team-oil-pour.jpg'
+      image:'images/oil/06-team-oil-pour.jpg', detailHref:'oil-change-korat.html'
     },
     {
       id:'suspension', eyebrow:'งานเชี่ยวชาญ',
@@ -186,37 +183,21 @@ function ServicesPage() {
       desc:'ตรวจเช็คและซ่อมช่วงล่างรถยนต์อย่างละเอียด เปลี่ยนโช้คอัพ ลูกหมาก ปีกนก ยางรัดเพลา ลูกปืนล้อ ด้วยอะไหล่คุณภาพและช่างที่ชำนาญเฉพาะด้าน',
       bullets:['ตรวจเช็คช่วงล่างฟรี','เปลี่ยนโช้คอัพคู่หน้า-หลัง','เปลี่ยนลูกหมาก ปีกนก','ลูกปืนล้อ ยางรัดเพลา','อะไหล่มาตรฐาน OE/OEM','รับประกันคุณภาพ'],
       benefits:'ตรวจเช็คช่วงล่างฟรี แจ้งราคาตรงไปตรงมาก่อนเริ่มงานทุกครั้ง ไม่มีบวกเพิ่ม',
-      image:'images/suspension/04-propshaft-repair.jpg', reverse:true
-    },
-    {
-      id:'brake', eyebrow:'ความปลอดภัย',
-      title:'ซ่อมเบรครถยนต์ โคราช',
-      seoH2:'ศูนย์ซ่อมเบรครถยนต์โคราช เปลี่ยนผ้าเบรค จานเบรค น้ำมันเบรค บริการครบจบในที่เดียว',
-      desc:'เปลี่ยนผ้าเบรค จานเบรค ซ่อมแม่ปั๊มเบรค ลูกสูบเบรค เปลี่ยนและฟรัชชิ่งน้ำมันเบรค ด้วยอะไหล่คุณภาพสูง เพื่อความปลอดภัยสูงสุดในการขับขี่',
-      bullets:['เปลี่ยนผ้าเบรคคุณภาพสูง','เจียร/เปลี่ยนจานเบรค','ซ่อมแม่ปั๊ม-ลูกสูบเบรค','ฟรัชชิ่งน้ำมันเบรค','ตรวจเช็คระบบ ABS','รับประกันการติดตั้ง'],
-      benefits:'ตรวจเช็คระบบเบรคทั้งระบบฟรี เพื่อความปลอดภัยสูงสุดของคุณและครอบครัว',
-      image:'images/brake/02-brake-work.jpg'
-    },
-    {
-      id:'battery', eyebrow:'ระบบไฟฟ้า',
-      title:'เปลี่ยนแบตเตอรี่รถยนต์',
-      desc:'บริการเปลี่ยนแบตเตอรี่รถยนต์ มีให้เลือกตามรุ่นรถ แบรนด์ BEC, TTW และแบรนด์มาตรฐาน พร้อมตรวจสภาพระบบไฟฟ้าและไดชาร์จ',
-      bullets:['แบตเตอรี่คุณภาพสูง','ตรวจไดชาร์จ-ไดสตาร์ท','วัดค่าแบตแม่นยำ','ติดตั้งพร้อมใช้งาน','รับประกันแบต','เปลี่ยนหน้าร้าน/นอกสถานที่'],
-      image:'images/workshop/06-fortuner-hood.jpg', reverse:true
+      image:'images/suspension/04-propshaft-repair.jpg', reverse:true, detailHref:'suspension-korat.html'
     },
     {
       id:'flushing', eyebrow:'ระบบเกียร์',
       title:'ฟรัชชิ่งเกียร์ + เปลี่ยนน้ำมันเกียร์',
       desc:'ฟรัชชิ่งระบบเกียร์ เปลี่ยนน้ำมันเกียร์ เปลี่ยนกรองเกียร์พร้อมปะเก็น ช่วยยืดอายุระบบเกียร์และเพิ่มประสิทธิภาพการเปลี่ยนเกียร์ให้นุ่มนวลขึ้น',
       bullets:['ฟรัชชิ่งเกียร์ด้วยเครื่องมือมาตรฐาน','เปลี่ยนกรองเกียร์+ปะเก็น','น้ำมันเกียร์มาตรฐาน','รถเกียร์ออโต้และเกียร์ธรรมดา','ตรวจเช็คระบบเกียร์','คำแนะนำการดูแล'],
-      image:'images/transmission/01-liqui-moly-flush-machine.jpg'
+      image:'images/transmission/01-liqui-moly-flush-machine.jpg', detailHref:'transmission-flush-korat.html'
     },
     {
       id:'headlight', eyebrow:'ดูแลภายนอก',
       title:'ขัดไฟหน้ารถยนต์',
       desc:'บริการขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่ พร้อมเคลือบป้องกัน UV เพิ่มความปลอดภัยในการขับขี่เวลากลางคืนและทำให้รถของคุณดูใหม่ขึ้น',
       bullets:['ขัดไฟหน้าทั้ง 2 ข้าง','ขัดละเอียดหลายขั้นตอน','เคลือบป้องกัน UV','ยืดอายุความใส','เพิ่มความสว่างไฟหน้า','เพิ่มมูลค่ารถ'],
-      image:'images/headlight/02-automix-after.jpg', reverse:true
+      image:'images/headlight/02-automix-after.jpg', reverse:true, detailHref:'headlight-restoration-korat.html'
     },
   ];
 

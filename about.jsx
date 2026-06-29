@@ -16,9 +16,9 @@ function AboutPage() {
   ];
   const team = [
     { name: 'ช่างเอ', role: 'หัวหน้าช่าง', exp: 'ประสบการณ์ 15+ ปี รถยุโรป', initial: 'อ', img: 'images/workshop/11-mechanic-truck.jpg' },
-    { name: 'ช่างบี', role: 'ช่างช่วงล่าง', exp: 'ประสบการณ์ 10+ ปี ช่วงล่างและเบรค', initial: 'บ', img: 'images/suspension/06-propshaft-inspection.jpg' },
-    { name: 'ช่างซี', role: 'ช่างระบบเกียร์', exp: 'ประสบการณ์ 12+ ปี เกียร์ออโต้', initial: 'ซ', img: 'images/workshop/01-mechanic-dipstick.jpg' },
-    { name: 'ช่างดี', role: 'ช่างไฟฟ้า', exp: 'ประสบการณ์ 8+ ปี แบตเตอรี่และไฟฟ้า', initial: 'ด', img: 'images/workshop/08-mechanic-dipstick-2.jpg' },
+    { name: 'ช่างบี', role: 'ช่างช่วงล่าง', exp: 'ประสบการณ์ 10+ ปี ช่วงล่างและน้ำมันเครื่อง', initial: 'บ', img: 'images/suspension/06-propshaft-inspection.jpg' },
+    { name: 'ช่างซี', role: 'ช่างระบบเกียร์', exp: 'ประสบการณ์ 12+ ปี ฟรัชชิ่งเกียร์ออโต้และ CVT', initial: 'ซ', img: 'images/workshop/01-mechanic-dipstick.jpg' },
+    { name: 'ช่างดี', role: 'ช่างดูแลภายนอก', exp: 'ประสบการณ์ 8+ ปี ขัดไฟหน้าและเคลือบ', initial: 'ด', img: 'images/workshop/08-mechanic-dipstick-2.jpg' },
   ];
 
   return (

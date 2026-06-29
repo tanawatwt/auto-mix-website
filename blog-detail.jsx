@@ -105,8 +105,8 @@ function BlogDetailPage() {
           <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}} className="related-grid">
             {[
               {cat:'ช่วงล่าง',title:'5 สัญญาณที่ช่วงล่างต้องตรวจเช็ค',img:'images/suspension/01-wheel-check.jpg'},
-              {cat:'ระบบเบรค',title:'ฟรัชชิ่งน้ำมันเบรคช่วยความปลอดภัย',img:'images/brake/02-brake-work.jpg'},
-              {cat:'ดูแลรถ',title:'เช็คลิสต์ก่อนออกเดินทางไกล',img:'images/workshop/01-mechanic-dipstick.jpg'},
+              {cat:'ฟรัชชิ่งเกียร์',title:'ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์อย่างไร',img:'images/transmission/01-liqui-moly-flush-machine.jpg'},
+              {cat:'ขัดไฟหน้า',title:'ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่',img:'images/headlight/02-automix-after.jpg'},
             ].map((p,i)=>(
               <a key={i} href="blog-detail.html" className="blog-featured" style={{textDecoration:'none'}}>
                 <div className="media" style={{aspectRatio:'16/10'}}><img className="bg" src={p.img} alt={p.title} loading="lazy" /></div>
