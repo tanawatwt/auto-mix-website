@@ -21,7 +21,7 @@ const FLUSH_DATA = {
       'น้ำมันเกียร์ที่ใช้งานนานจะเสื่อมสภาพ มีตะกอนและเศษโลหะปนเปื้อน ทำให้เกียร์กระตุก เปลี่ยนเกียร์ไม่นุ่ม และร้อนง่าย การฟรัชชิ่งเกียร์คือการล้างน้ำมันเก่าออกจากระบบให้หมด ไม่ใช่แค่ถ่ายออกบางส่วน จึงสะอาดและได้ประสิทธิภาพมากกว่าการเปลี่ยนถ่ายแบบทั่วไป',
       'AUTO MIX ฟรัชชิ่งเกียร์ด้วยเครื่องมาตรฐาน LIQUI MOLY ในตัวเมืองโคราช พร้อมเปลี่ยนกรองเกียร์และปะเก็น เลือกน้ำมันเกียร์ให้ตรงสเปครถ รองรับทั้งเกียร์ออโต้ เกียร์ธรรมดา และระบบ CVT ช่างจะตรวจเช็คและแจ้งราคาให้ทราบก่อนเริ่มงานทุกครั้ง',
     ],
-    image: 'images/transmission/01-liqui-moly-flush-machine.jpg',
+    image: 'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg',
     caption: 'เครื่องฟรัชชิ่ง LIQUI MOLY',
   },
   included: {
@@ -49,12 +49,12 @@ const FLUSH_DATA = {
     ],
   },
   gallery: [
-    { src: 'images/transmission/02-flush-machine.jpg', alt: 'เครื่องฟรัชชิ่งเกียร์ โคราช' },
-    { src: 'images/transmission/04-old-trans-pan.jpg', alt: 'อ่างเกียร์เก่ามีตะกอนก่อนฟรัชชิ่ง' },
-    { src: 'images/transmission/03-new-trans-pan.jpg', alt: 'อ่างเกียร์สะอาดหลังเปลี่ยนกรองเกียร์' },
-    { src: 'images/transmission/05-zic-cvtf.jpg', alt: 'น้ำมันเกียร์ CVT ZIC CVTF' },
-    { src: 'images/products/06-zic-cvtf-set.jpg', alt: 'ชุดน้ำมันเกียร์ CVT โคราช' },
-    { src: 'images/transmission/01-liqui-moly-flush-machine.jpg', alt: 'ฟรัชชิ่งเกียร์ด้วยเครื่อง LIQUI MOLY' },
+    { src: 'images/automix/automix-gearbox-flush-atf-flush-machine-02.jpg', alt: 'เครื่องฟรัชชิ่งเกียร์ โคราช' },
+    { src: 'images/automix/automix-gearbox-flush-transmission-pan-removed.jpg', alt: 'อ่างเกียร์เก่ามีตะกอนก่อนฟรัชชิ่ง' },
+    { src: 'images/automix/automix-gearbox-flush-transmission-pan-part.jpg', alt: 'อ่างเกียร์สะอาดหลังเปลี่ยนกรองเกียร์' },
+    { src: 'images/automix/automix-gearbox-flush-atf-filter-kit.jpg', alt: 'ชุดกรองเกียร์และน้ำมันเกียร์ โคราช' },
+    { src: 'images/automix/automix-gearbox-flush-pouring-atf-fluid.jpg', alt: 'เติมน้ำมันเกียร์ใหม่ โคราช' },
+    { src: 'images/automix/automix-gearbox-flush-flush-machine-service-01.jpg', alt: 'ฟรัชชิ่งเกียร์ด้วยเครื่องมาตรฐาน โคราช' },
   ],
   gallery_title: 'ตัวอย่างงานฟรัชชิ่งเกียร์',
   faqs: [

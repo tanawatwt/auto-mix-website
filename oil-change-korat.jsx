@@ -21,7 +21,7 @@ const OIL_DATA = {
       'น้ำมันเครื่องคือหัวใจของเครื่องยนต์ การเปลี่ยนถ่ายตามระยะช่วยลดการสึกหรอ ระบายความร้อน และยืดอายุเครื่องยนต์ AUTO MIX เป็นศูนย์เปลี่ยนน้ำมันเครื่องในตัวเมืองโคราช บนถนนมิตรภาพ ใกล้แยกเทอร์มินอล ที่เลือกสเปคน้ำมันให้เหมาะกับรถแต่ละรุ่นจริง ไม่ใช่ขายตามโปรอย่างเดียว',
       'เราใช้น้ำมันเครื่องของแท้จากตัวแทนจำหน่ายโดยตรง ทั้ง LIQUI MOLY จากเยอรมนี, ZIC, MOTUL และ Nexzter ครอบคลุมทั้งเครื่องเบนซิน ดีเซล และรถยุโรป พร้อมเปลี่ยนกรองน้ำมันเครื่องและตรวจระดับของเหลวทุกระบบในคราวเดียว',
     ],
-    image: 'images/oil/06-team-oil-pour.jpg',
+    image: 'images/automix/automix-engine-oil-pouring-oil-02.jpg',
     caption: 'LIQUI MOLY • ZIC • MOTUL',
   },
   included: {
@@ -49,12 +49,12 @@ const OIL_DATA = {
     ],
   },
   gallery: [
-    { src: 'images/oil/04-zic-x7-hero.jpg', alt: 'น้ำมันเครื่อง ZIC X7 เปลี่ยนน้ำมันเครื่องโคราช' },
-    { src: 'images/oil/08-liqui-moly-5w30.jpg', alt: 'LIQUI MOLY 5W-30 ศูนย์บริการโคราช' },
-    { src: 'images/oil/11-engine-clean.jpg', alt: 'ล้างเครื่องยนต์ Engine Flush โคราช' },
-    { src: 'images/oil/13-fuel-filter-old-new.jpg', alt: 'เปลี่ยนกรองน้ำมันเครื่องเก่าใหม่' },
-    { src: 'images/oil/02-nexzter-pour.jpg', alt: 'เปลี่ยนถ่ายน้ำมันเครื่อง Nexzter' },
-    { src: 'images/workshop/01-mechanic-dipstick.jpg', alt: 'ช่างตรวจระดับน้ำมันเครื่องโคราช' },
+    { src: 'images/automix/automix-engine-oil-bmw-oil-service.jpg', alt: 'น้ำมันเครื่อง ZIC X7 เปลี่ยนน้ำมันเครื่องโคราช' },
+    { src: 'images/automix/automix-engine-oil-pouring-oil-03.jpg', alt: 'LIQUI MOLY 5W-30 ศูนย์บริการโคราช' },
+    { src: 'images/automix/automix-engine-oil-engine-bay-service.jpg', alt: 'ล้างเครื่องยนต์ Engine Flush โคราช' },
+    { src: 'images/automix/automix-engine-oil-oil-filter-products.jpg', alt: 'เปลี่ยนกรองน้ำมันเครื่องเก่าใหม่' },
+    { src: 'images/automix/automix-engine-oil-pouring-oil-05.jpg', alt: 'เปลี่ยนถ่ายน้ำมันเครื่อง Nexzter' },
+    { src: 'images/automix/automix-engine-oil-dipstick-check.jpg', alt: 'ช่างตรวจระดับน้ำมันเครื่องโคราช' },
   ],
   gallery_title: 'ตัวอย่างงานเปลี่ยนน้ำมันเครื่อง',
   pricing: {

@@ -29,7 +29,7 @@ function BlogDetailPage() {
         </div>
         <div className="container" style={{maxWidth:820,padding:'56px 24px'}}>
           <div style={{aspectRatio:'16/9',borderRadius:14,overflow:'hidden',marginBottom:48,border:'1px solid var(--border)',position:'relative'}}>
-            <img src="images/oil/10-liqui-moly-night.jpg" alt="เลือกน้ำมันเครื่อง" loading="eager" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+            <img src="images/automix/automix-engine-oil-pouring-oil-01.jpg" alt="เลือกน้ำมันเครื่อง" loading="eager" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
           </div>
           <div style={{fontSize:17,lineHeight:1.8,color:'var(--text)'}}>
             <p style={{fontSize:19,color:'var(--text-dim)',marginBottom:32,fontWeight:500,textWrap:'pretty'}}>
@@ -104,9 +104,9 @@ function BlogDetailPage() {
           <h2 className="sec-title" style={{fontSize:32,marginBottom:32}}>บทความที่เกี่ยวข้อง</h2>
           <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}} className="related-grid">
             {[
-              {cat:'ช่วงล่าง',title:'5 สัญญาณที่ช่วงล่างต้องตรวจเช็ค',img:'images/suspension/01-wheel-check.jpg'},
-              {cat:'ฟรัชชิ่งเกียร์',title:'ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์อย่างไร',img:'images/transmission/01-liqui-moly-flush-machine.jpg'},
-              {cat:'ขัดไฟหน้า',title:'ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่',img:'images/headlight/02-automix-after.jpg'},
+              {cat:'ช่วงล่าง',title:'5 สัญญาณที่ช่วงล่างต้องตรวจเช็ค',img:'images/automix/automix-suspension-wheel-inspection.jpg'},
+              {cat:'ฟรัชชิ่งเกียร์',title:'ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์อย่างไร',img:'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg'},
+              {cat:'ขัดไฟหน้า',title:'ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่',img:'images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg'},
             ].map((p,i)=>(
               <a key={i} href="blog-detail.html" className="blog-featured" style={{textDecoration:'none'}}>
                 <div className="media" style={{aspectRatio:'16/10'}}><img className="bg" src={p.img} alt={p.title} loading="lazy" /></div>

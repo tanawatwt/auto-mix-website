@@ -30,7 +30,7 @@ function Hero({ variant = 'split' }) {
             minHeight: 480,
             border: '1px solid var(--border-strong)', padding: '64px 56px', display: 'flex', alignItems: 'center'
           }}>
-            <img src="images/hero/01-bmw-shopfloor.jpg" alt="" aria-hidden="true" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',zIndex:0}} />
+            <img src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="" aria-hidden="true" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',zIndex:0}} />
             <div style={{position:'absolute',inset:0,background:'linear-gradient(90deg, rgba(10,10,10,.94) 28%, rgba(10,10,10,.55) 60%, rgba(10,10,10,.25) 100%)',zIndex:1}}></div>
             <div style={{maxWidth: 640, position: 'relative', zIndex: 2}}>
               <div className="hero-tagline"><span className="hero-tagline-dot"></span>AUTO MIX — ออโต้มิกซ์ โคราช</div>
@@ -83,7 +83,7 @@ function Hero({ variant = 'split' }) {
           </div>
         </div>
         <div className="hero-visual">
-          <img className="bg" src="images/hero/01-bmw-shopfloor.jpg" alt="AUTO MIX โคราช — ศูนย์บริการรถยนต์" loading="eager" />
+          <img className="bg" src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="AUTO MIX โคราช — ศูนย์บริการรถยนต์" loading="eager" />
           <div className="hero-visual-overlay"></div>
           <div className="hero-visual-badge"><span className="dot"></span>เปิดให้บริการวันนี้</div>
           <div className="hero-visual-tag">
@@ -252,7 +252,7 @@ function Expertise() {
         </div>
         <div className="expertise-grid">
           <div className="exp-card lg">
-            <div className="exp-media"><img className="bg" src="images/oil/04-zic-x7-hero.jpg" alt="เลือกน้ำมันเครื่อง" loading="lazy" /></div>
+            <div className="exp-media"><img className="bg" src="images/automix/automix-engine-oil-bmw-oil-service.jpg" alt="เลือกน้ำมันเครื่อง" loading="lazy" /></div>
             <div className="exp-body">
               <div className="exp-tag">น้ำมันเครื่อง</div>
               <h3>เลือกน้ำมันเครื่องอย่างไรให้เหมาะกับรถคุณ</h3>
@@ -286,12 +286,12 @@ function Expertise() {
 
 function GalleryPreview() {
   const items = [
-    { src: 'images/hero/01-bmw-shopfloor.jpg', cls: 'wide tall', label: 'Workshop — AUTO MIX' },
-    { src: 'images/oil/04-zic-x7-hero.jpg', cls: '', label: 'เปลี่ยนน้ำมันเครื่อง' },
-    { src: 'images/headlight/02-automix-after.jpg', cls: '', label: 'ขัดไฟหน้ารถยนต์' },
-    { src: 'images/products/04-team-liquimoly-rack.jpg', cls: 'wide', label: 'LIQUI MOLY display' },
-    { src: 'images/suspension/01-wheel-check.jpg', cls: '', label: 'ตรวจเช็คช่วงล่าง' },
-    { src: 'images/transmission/01-liqui-moly-flush-machine.jpg', cls: '', label: 'ฟรัชชิ่งเกียร์' },
+    { src: 'images/automix/automix-engine-oil-bmw-on-lift-02.jpg', cls: 'wide tall', label: 'Workshop — AUTO MIX' },
+    { src: 'images/automix/automix-engine-oil-pouring-oil-07.jpg', cls: '', label: 'เปลี่ยนน้ำมันเครื่อง' },
+    { src: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-03.jpg', cls: '', label: 'ขัดไฟหน้ารถยนต์' },
+    { src: 'images/automix/automix-engine-oil-oil-products-display.jpg', cls: 'wide', label: 'LIQUI MOLY display' },
+    { src: 'images/automix/automix-suspension-underbody-service.jpg', cls: '', label: 'ตรวจเช็คช่วงล่าง' },
+    { src: 'images/automix/automix-gearbox-flush-flush-machine-service-02.jpg', cls: '', label: 'ฟรัชชิ่งเกียร์' },
   ];
   return (
     <section className="sec">
@@ -365,7 +365,7 @@ function BlogPreview() {
         </div>
         <div className="blog-preview-grid">
           <a href="blog-detail.html" className="blog-featured">
-            <div className="media"><img className="bg" src="images/oil/10-liqui-moly-night.jpg" alt="เลือกน้ำมันเครื่อง LIQUI MOLY" loading="lazy" /></div>
+            <div className="media"><img className="bg" src="images/automix/automix-engine-oil-pouring-oil-01.jpg" alt="เลือกน้ำมันเครื่อง LIQUI MOLY" loading="lazy" /></div>
             <div className="body">
               <span className="blog-cat">น้ำมันเครื่อง</span>
               <h3>เลือกน้ำมันเครื่องอย่างไรให้เหมาะกับรถยุโรปและรถเอเชีย</h3>
@@ -378,7 +378,7 @@ function BlogPreview() {
           </a>
           <div className="blog-small-list">
             <a href="blog-detail.html" className="blog-small">
-              <div className="media"><img className="bg" src="images/suspension/01-wheel-check.jpg" alt="ช่วงล่าง" loading="lazy" /></div>
+              <div className="media"><img className="bg" src="images/automix/automix-suspension-wheel-inspection.jpg" alt="ช่วงล่าง" loading="lazy" /></div>
               <div className="body">
                 <span className="blog-cat">ช่วงล่าง</span>
                 <h4>5 สัญญาณที่ช่วงล่างต้องตรวจเช็ค</h4>
@@ -386,7 +386,7 @@ function BlogPreview() {
               </div>
             </a>
             <a href="blog-detail.html" className="blog-small">
-              <div className="media"><img className="bg" src="images/transmission/01-liqui-moly-flush-machine.jpg" alt="ฟรัชชิ่งเกียร์" loading="lazy" /></div>
+              <div className="media"><img className="bg" src="images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg" alt="ฟรัชชิ่งเกียร์" loading="lazy" /></div>
               <div className="body">
                 <span className="blog-cat">เกียร์</span>
                 <h4>ฟรัชชิ่งเกียร์ต่างจากเปลี่ยนน้ำมันเกียร์อย่างไร</h4>
@@ -394,7 +394,7 @@ function BlogPreview() {
               </div>
             </a>
             <a href="blog-detail.html" className="blog-small">
-              <div className="media"><img className="bg" src="images/headlight/02-automix-after.jpg" alt="ขัดไฟหน้ารถยนต์" loading="lazy" /></div>
+              <div className="media"><img className="bg" src="images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg" alt="ขัดไฟหน้ารถยนต์" loading="lazy" /></div>
               <div className="body">
                 <span className="blog-cat">ขัดไฟหน้า</span>
                 <h4>ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่</h4>

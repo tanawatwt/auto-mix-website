@@ -21,7 +21,7 @@ const SUSPENSION_DATA = {
       'ช่วงล่างที่สมบูรณ์คือพื้นฐานของการขับขี่ที่ปลอดภัยและนุ่มนวล เมื่อโช้คอัพ ลูกหมาก หรือปีกนกเริ่มสึกหรอ จะทำให้รถโคลง พวงมาลัยหนัก มีเสียงดัง และยางสึกไม่สม่ำเสมอ AUTO MIX เป็นศูนย์ซ่อมช่วงล่างในตัวเมืองโคราช บนถนนมิตรภาพ ที่ตรวจเช็คให้เห็นปัญหาจริงก่อนเสมอ',
       'เราตรวจเช็คช่วงล่างให้ฟรี เปลี่ยนเฉพาะชิ้นที่จำเป็น ด้วยอะไหล่มาตรฐาน OE/OEM และแจ้งราคาตรงไปตรงมาก่อนเริ่มงานทุกครั้ง ไม่มีบวกเพิ่ม รองรับทั้งรถเก๋ง รถกระบะ SUV และรถยุโรป โดยช่างที่มีประสบการณ์เฉพาะด้าน',
     ],
-    image: 'images/suspension/04-propshaft-repair.jpg',
+    image: 'images/automix/automix-suspension-cv-joint-underbody-01.jpg',
     caption: 'ครอบคลุม EU / ASIA',
   },
   included: {
@@ -49,12 +49,12 @@ const SUSPENSION_DATA = {
     ],
   },
   gallery: [
-    { src: 'images/suspension/01-wheel-check.jpg', alt: 'ตรวจเช็คช่วงล่างล้อรถ โคราช' },
-    { src: 'images/suspension/06-propshaft-inspection.jpg', alt: 'ตรวจเพลากลางช่วงล่าง โคราช' },
-    { src: 'images/suspension/07-mpv-underbody.jpg', alt: 'ซ่อมช่วงล่างรถ MPV โคราช' },
-    { src: 'images/workshop/09-underbody-wide.jpg', alt: 'ยกรถตรวจช่วงล่างใต้ท้องรถ' },
-    { src: 'images/workshop/12-pickup-front-lifted.jpg', alt: 'ซ่อมช่วงล่างรถกระบะ โคราช' },
-    { src: 'images/suspension/05-underbody-drain.jpg', alt: 'งานใต้ท้องรถ ช่วงล่าง โคราช' },
+    { src: 'images/automix/automix-suspension-wheel-inspection.jpg', alt: 'ตรวจเช็คช่วงล่างล้อรถ โคราช' },
+    { src: 'images/automix/automix-suspension-underbody-inspection.jpg', alt: 'ตรวจช่วงล่างใต้ท้องรถ โคราช' },
+    { src: 'images/automix/automix-suspension-suspension-arm-service.jpg', alt: 'เปลี่ยนปีกนกช่วงล่าง โคราช' },
+    { src: 'images/automix/automix-suspension-coil-spring-underbody.jpg', alt: 'ตรวจสปริงโช้คอัพช่วงล่าง โคราช' },
+    { src: 'images/automix/automix-suspension-wheel-hub-service-01.jpg', alt: 'บริการลูกปืนล้อ ดุมล้อ โคราช' },
+    { src: 'images/automix/automix-suspension-underbody-work.jpg', alt: 'งานซ่อมช่วงล่างใต้ท้องรถ โคราช' },
   ],
   gallery_title: 'ตัวอย่างงานซ่อมช่วงล่าง',
   faqs: [

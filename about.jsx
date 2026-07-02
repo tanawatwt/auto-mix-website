@@ -15,10 +15,10 @@ function AboutPage() {
     { icon: <Icon.Price />, title: 'คุ้มค่าราคาดี', desc: 'ราคายุติธรรม คุ้มค่ากับคุณภาพงานและผลิตภัณฑ์ที่เลือกใช้' },
   ];
   const team = [
-    { name: 'ช่างเอ', role: 'หัวหน้าช่าง', exp: 'ประสบการณ์ 15+ ปี รถยุโรป', initial: 'อ', img: 'images/workshop/11-mechanic-truck.jpg' },
-    { name: 'ช่างบี', role: 'ช่างช่วงล่าง', exp: 'ประสบการณ์ 10+ ปี ช่วงล่างและน้ำมันเครื่อง', initial: 'บ', img: 'images/suspension/06-propshaft-inspection.jpg' },
-    { name: 'ช่างซี', role: 'ช่างระบบเกียร์', exp: 'ประสบการณ์ 12+ ปี ฟรัชชิ่งเกียร์ออโต้และ CVT', initial: 'ซ', img: 'images/workshop/01-mechanic-dipstick.jpg' },
-    { name: 'ช่างดี', role: 'ช่างดูแลภายนอก', exp: 'ประสบการณ์ 8+ ปี ขัดไฟหน้าและเคลือบ', initial: 'ด', img: 'images/workshop/08-mechanic-dipstick-2.jpg' },
+    { name: 'ช่างเอ', role: 'หัวหน้าช่าง', exp: 'ประสบการณ์ 15+ ปี รถยุโรป', initial: 'อ', img: 'images/automix/automix-engine-oil-bmw-service-consult.jpg' },
+    { name: 'ช่างบี', role: 'ช่างช่วงล่าง', exp: 'ประสบการณ์ 10+ ปี ช่วงล่างและน้ำมันเครื่อง', initial: 'บ', img: 'images/automix/automix-suspension-underbody-inspection.jpg' },
+    { name: 'ช่างซี', role: 'ช่างระบบเกียร์', exp: 'ประสบการณ์ 12+ ปี ฟรัชชิ่งเกียร์ออโต้และ CVT', initial: 'ซ', img: 'images/automix/automix-engine-oil-dipstick-check.jpg' },
+    { name: 'ช่างดี', role: 'ช่างดูแลภายนอก', exp: 'ประสบการณ์ 8+ ปี ขัดไฟหน้าและเคลือบ', initial: 'ด', img: 'images/automix/automix-engine-oil-engine-bay-service.jpg' },
   ];
 
   return (
@@ -52,7 +52,7 @@ function AboutPage() {
               </div>
             </div>
             <div style={{aspectRatio:'4/5',borderRadius:14,overflow:'hidden',border:'1px solid var(--border)',position:'relative'}}>
-              <img src="images/hero/04-team-products.jpg" alt="ทีม AUTO MIX โคราช" loading="lazy" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+              <img src="images/automix/automix-engine-oil-oil-products-display.jpg" alt="ทีม AUTO MIX โคราช" loading="lazy" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
               <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55) 100%)',pointerEvents:'none'}}></div>
               <div style={{position:'absolute',bottom:20,left:20,right:20,display:'flex',alignItems:'flex-end',justifyContent:'space-between',gap:16,zIndex:2}}>
                 <div>

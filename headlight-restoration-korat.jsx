@@ -21,7 +21,7 @@ const HEADLIGHT_DATA = {
       'ไฟหน้ารถที่เหลือง ขุ่น เป็นฝ้า ไม่ได้แค่ทำให้รถดูเก่า แต่ยังทำให้แสงไฟส่องสว่างน้อยลง เพิ่มความเสี่ยงในการขับขี่เวลากลางคืน การขัดไฟหน้าช่วยคืนความใสให้โคมไฟ เพิ่มแสงสว่าง และทำให้หน้ารถดูใหม่ขึ้นโดยไม่ต้องเปลี่ยนโคมไฟใหม่ที่มีราคาสูง',
       'AUTO MIX ขัดไฟหน้ารถยนต์ในตัวเมืองโคราช บนถนนมิตรภาพ ด้วยขั้นตอนการขัดละเอียดหลายสเตป แล้วเคลือบป้องกัน UV เพื่อชะลอการกลับมาเหลืองซ้ำ ทำได้ทั้งสองข้าง รอรับได้ไม่นาน เหมาะกับรถทุกรุ่นที่ไฟหน้าเริ่มหมองหรือเหลือง',
     ],
-    image: 'images/headlight/05-ceramic-before-after.jpg',
+    image: 'images/automix/automix-headlight-restoration-before-after-comparison-01.jpg',
     caption: 'ก่อน–หลัง เคลือบ UV',
   },
   included: {
@@ -49,12 +49,12 @@ const HEADLIGHT_DATA = {
     ],
   },
   gallery: [
-    { src: 'images/headlight/01-headlight-clean.jpg', alt: 'ขัดทำความสะอาดไฟหน้า โคราช' },
-    { src: 'images/headlight/02-automix-after.jpg', alt: 'ไฟหน้าใสหลังขัด AUTO MIX โคราช' },
-    { src: 'images/headlight/03-coating.jpg', alt: 'เคลือบป้องกัน UV ไฟหน้า โคราช' },
-    { src: 'images/headlight/04-headlight-detail.jpg', alt: 'รายละเอียดงานขัดไฟหน้า' },
-    { src: 'images/headlight/06-glass-clean.jpg', alt: 'ทำความสะอาดกระจกไฟหน้า' },
-    { src: 'images/headlight/05-ceramic-before-after.jpg', alt: 'ก่อนหลังขัดไฟหน้าเคลือบ UV' },
+    { src: 'images/automix/automix-headlight-restoration-technician-polishing-lens.jpg', alt: 'ขัดทำความสะอาดไฟหน้า โคราช' },
+    { src: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg', alt: 'ไฟหน้าใสหลังขัด AUTO MIX โคราช' },
+    { src: 'images/automix/automix-headlight-restoration-technician-coating-lens.jpg', alt: 'เคลือบป้องกัน UV ไฟหน้า โคราช' },
+    { src: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-02.jpg', alt: 'รายละเอียดงานขัดไฟหน้า' },
+    { src: 'images/automix/automix-headlight-restoration-technician-cleaning-lens.jpg', alt: 'ทำความสะอาดกระจกไฟหน้า' },
+    { src: 'images/automix/automix-headlight-restoration-before-after-comparison-02.jpg', alt: 'ก่อนหลังขัดไฟหน้าเคลือบ UV' },
   ],
   gallery_title: 'ผลงานขัดไฟหน้า ก่อน–หลัง',
   faqs: [

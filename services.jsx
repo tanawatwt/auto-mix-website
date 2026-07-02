@@ -174,7 +174,7 @@ function ServicesPage() {
       desc:'เปลี่ยนถ่ายน้ำมันเครื่องรถยนต์ทุกรุ่น ทั้งรถยุโรปและรถเอเชีย เลือกสเปคน้ำมันที่เหมาะกับเครื่องยนต์ พร้อมเปลี่ยนกรองน้ำมันเครื่องและตรวจเช็คระดับของเหลวทั้งหมด',
       bullets:['น้ำมันแท้จากตัวแทน','เปลี่ยนกรองน้ำมันเครื่อง','ตรวจของเหลวทั้งระบบ','ช่างเลือกสเปคให้ตามรุ่นรถ','ล้างเครื่องยนต์ (Engine Flush)','รับประกันคุณภาพงาน'],
       benefits:'ฟรีตรวจเช็คสภาพรถ 20 จุด เมื่อใช้บริการเปลี่ยนน้ำมันเครื่องในโปรโมชั่นที่กำหนด',
-      image:'images/oil/06-team-oil-pour.jpg', detailHref:'oil-change-korat.html'
+      image:'images/automix/automix-engine-oil-pouring-oil-02.jpg', detailHref:'oil-change-korat.html'
     },
     {
       id:'suspension', eyebrow:'งานเชี่ยวชาญ',
@@ -183,21 +183,21 @@ function ServicesPage() {
       desc:'ตรวจเช็คและซ่อมช่วงล่างรถยนต์อย่างละเอียด เปลี่ยนโช้คอัพ ลูกหมาก ปีกนก ยางรัดเพลา ลูกปืนล้อ ด้วยอะไหล่คุณภาพและช่างที่ชำนาญเฉพาะด้าน',
       bullets:['ตรวจเช็คช่วงล่างฟรี','เปลี่ยนโช้คอัพคู่หน้า-หลัง','เปลี่ยนลูกหมาก ปีกนก','ลูกปืนล้อ ยางรัดเพลา','อะไหล่มาตรฐาน OE/OEM','รับประกันคุณภาพ'],
       benefits:'ตรวจเช็คช่วงล่างฟรี แจ้งราคาตรงไปตรงมาก่อนเริ่มงานทุกครั้ง ไม่มีบวกเพิ่ม',
-      image:'images/suspension/04-propshaft-repair.jpg', reverse:true, detailHref:'suspension-korat.html'
+      image:'images/automix/automix-suspension-cv-joint-underbody-01.jpg', reverse:true, detailHref:'suspension-korat.html'
     },
     {
       id:'flushing', eyebrow:'ระบบเกียร์',
       title:'ฟรัชชิ่งเกียร์ + เปลี่ยนน้ำมันเกียร์',
       desc:'ฟรัชชิ่งระบบเกียร์ เปลี่ยนน้ำมันเกียร์ เปลี่ยนกรองเกียร์พร้อมปะเก็น ช่วยยืดอายุระบบเกียร์และเพิ่มประสิทธิภาพการเปลี่ยนเกียร์ให้นุ่มนวลขึ้น',
       bullets:['ฟรัชชิ่งเกียร์ด้วยเครื่องมือมาตรฐาน','เปลี่ยนกรองเกียร์+ปะเก็น','น้ำมันเกียร์มาตรฐาน','รถเกียร์ออโต้และเกียร์ธรรมดา','ตรวจเช็คระบบเกียร์','คำแนะนำการดูแล'],
-      image:'images/transmission/01-liqui-moly-flush-machine.jpg', detailHref:'transmission-flush-korat.html'
+      image:'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg', detailHref:'transmission-flush-korat.html'
     },
     {
       id:'headlight', eyebrow:'ดูแลภายนอก',
       title:'ขัดไฟหน้ารถยนต์',
       desc:'บริการขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่ พร้อมเคลือบป้องกัน UV เพิ่มความปลอดภัยในการขับขี่เวลากลางคืนและทำให้รถของคุณดูใหม่ขึ้น',
       bullets:['ขัดไฟหน้าทั้ง 2 ข้าง','ขัดละเอียดหลายขั้นตอน','เคลือบป้องกัน UV','ยืดอายุความใส','เพิ่มความสว่างไฟหน้า','เพิ่มมูลค่ารถ'],
-      image:'images/headlight/02-automix-after.jpg', reverse:true, detailHref:'headlight-restoration-korat.html'
+      image:'images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg', reverse:true, detailHref:'headlight-restoration-korat.html'
     },
   ];
 
