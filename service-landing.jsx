@@ -63,7 +63,7 @@ function SL_Intro({ d }) {
           </div>
           <div>
             <div style={{aspectRatio:'4/3',borderRadius:14,overflow:'hidden',border:'1px solid var(--border)',background:'var(--bg-card)',position:'relative'}}>
-              <img src={d.intro.image} alt={d.hero.title + ' ' + d.hero.accent} loading="lazy" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+              <img src={d.intro.image} alt={d.hero.title + ' ' + d.hero.accent} loading="lazy" width="1080" height="720" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
               <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45) 100%)',pointerEvents:'none'}}></div>
               {d.intro.caption && (
                 <div style={{position:'absolute',bottom:16,left:16,background:'rgba(0,0,0,.8)',backdropFilter:'blur(8px)',padding:'8px 12px',borderRadius:8,fontSize:12,border:'1px solid var(--border-strong)',zIndex:2}}>
@@ -216,7 +216,7 @@ function SL_Gallery({ d }) {
         <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:12}} className="sl-gallery-grid">
           {d.gallery.map((g,i)=>(
             <div key={i} style={{aspectRatio:'4/3',borderRadius:12,overflow:'hidden',border:'1px solid var(--border)',background:'var(--bg-card)'}}>
-              <img src={g.src} alt={g.alt} loading="lazy" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+              <img src={g.src} alt={g.alt} loading="lazy" width="1080" height="720" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
             </div>
           ))}
         </div>

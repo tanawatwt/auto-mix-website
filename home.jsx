@@ -83,7 +83,7 @@ function Hero({ variant = 'split' }) {
           </div>
         </div>
         <div className="hero-visual">
-          <img className="bg" src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="AUTO MIX โคราช — ศูนย์บริการรถยนต์" loading="eager" />
+          <img className="bg" src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="AUTO MIX โคราช — ศูนย์บริการรถยนต์" loading="eager" width="1080" height="720" fetchpriority="high" />
           <div className="hero-visual-overlay"></div>
           <div className="hero-visual-badge"><span className="dot"></span>เปิดให้บริการวันนี้</div>
           <div className="hero-visual-tag">
