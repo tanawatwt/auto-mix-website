@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://automix.example.com/sitemap.xml
+Sitemap: https://automixgroup.com/sitemap.xml
