@@ -14,7 +14,7 @@ function SL_Hero({ d }) {
     <section className="page-header">
       <div className="container">
         <div className="breadcrumb">
-          <a href="index.html">หน้าแรก</a> <span>/</span>{' '}
+          <a href="/">หน้าแรก</a> <span>/</span>{' '}
           <a href="services.html">บริการ</a> <span>/</span>{' '}
           <span>{d.breadcrumb}</span>
         </div>

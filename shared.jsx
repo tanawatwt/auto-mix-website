@@ -51,7 +51,7 @@ function Header({ active }) {
   const [open, setOpen] = React.useState(false);
   const [subOpen, setSubOpen] = React.useState(false);
   const links = [
-    { href: 'index.html', label: 'หน้าแรก', key: 'home' },
+    { href: '/', label: 'หน้าแรก', key: 'home' },
     { href: 'services.html', label: 'บริการ', key: 'services', children: NAV_SERVICES },
     { href: 'gallery.html', label: 'ผลงาน', key: 'gallery' },
     { href: 'blog.html', label: 'บทความ', key: 'blog' },
@@ -61,7 +61,7 @@ function Header({ active }) {
   return (
     <header className="header">
       <div className="container">
-        <a href="index.html" className="brand">
+        <a href="/" className="brand">
           <img src="assets/logo.jpg" alt="AUTO MIX — ออโต้มิกซ์ ศูนย์บริการรถยนต์โคราช" className="brand-logo" />
         </a>
         <nav className={`nav ${open ? 'open' : ''}`}>
@@ -156,7 +156,7 @@ function Footer() {
           <div className="footer-col">
             <h4>เมนู</h4>
             <ul>
-              <li><a href="index.html">หน้าแรก</a></li>
+              <li><a href="/">หน้าแรก</a></li>
               <li><a href="services.html">บริการทั้งหมด</a></li>
               <li><a href="gallery.html">ผลงาน</a></li>
               <li><a href="blog.html">บทความ</a></li>
