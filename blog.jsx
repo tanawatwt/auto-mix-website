@@ -18,12 +18,11 @@ function BlogPage() {
     { id: 'care', label: 'ดูแลรถ' },
   ];
   const posts = [
-    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', img: 'images/automix/automix-engine-oil-pouring-oil-01.jpg', title: 'เลือกน้ำมันเครื่องอย่างไรให้เหมาะกับรถยุโรปและรถเอเชีย', excerpt: 'เรียนรู้เรื่องเบอร์ความหนืด ประเภทเครื่อง พฤติกรรมการขับขี่ ที่มีผลต่อการเลือกน้ำมัน', date: '24 เม.ย. 2026', read: '6 นาที' },
-    { cat: 'suspension', catLabel: 'ช่วงล่าง', img: 'images/automix/automix-suspension-wheel-inspection.jpg', title: '5 สัญญาณที่บอกว่าช่วงล่างของรถคุณควรตรวจเช็ค', excerpt: 'เสียงดังผิดปกติ ยางสึกไม่เท่ากัน การเกาะถนนไม่มั่นคง อย่ามองข้ามสัญญาณเหล่านี้', date: '22 เม.ย. 2026', read: '4 นาที' },
-    { cat: 'gear', catLabel: 'ฟรัชชิ่งเกียร์', img: 'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg', title: 'ฟรัชชิ่งเกียร์ vs. เปลี่ยนน้ำมันเกียร์ ต่างกันอย่างไร', excerpt: 'เข้าใจความแตกต่างของสองบริการนี้ เพื่อเลือกใช้ให้เหมาะกับสภาพรถของคุณ', date: '18 เม.ย. 2026', read: '5 นาที' },
-    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', img: 'images/automix/automix-headlight-restoration-before-after-comparison-01.jpg', title: 'ขัดไฟหน้ารถยนต์ให้ใสเหมือนใหม่ ช่วยเรื่องอะไรบ้าง', excerpt: 'ไฟหน้าที่เหลืองหรือเป็นฝ้าทำให้แสงสว่างน้อยลง การขัดและเคลือบ UV เพิ่มความปลอดภัยตอนกลางคืน', date: '12 เม.ย. 2026', read: '4 นาที' },
-    { cat: 'oil', catLabel: 'ผลิตภัณฑ์', img: 'images/automix/automix-engine-oil-oil-products-display.jpg', title: 'LIQUI MOLY ZIC และ MOTUL แตกต่างกันอย่างไร', excerpt: 'เปรียบเทียบน้ำมันพรีเมี่ยมแต่ละแบรนด์ และเข้าใจว่าน้ำมันที่ได้มาตรฐานสำคัญอย่างไร', date: '1 เม.ย. 2026', read: '6 นาที' },
-    { cat: 'care', catLabel: 'ดูแลรถ', img: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg', title: 'วิธีดูแลรถในหน้าฝนให้ปลอดภัยและอายุยาว', excerpt: 'ตั้งแต่ที่ปัดน้ำฝน ช่วงล่าง ไฟส่องทาง ถึงการทำความสะอาดรถ', date: '28 มี.ค. 2026', read: '5 นาที' },
+    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', href: 'blog-oil-change-price.html', img: 'images/automix/automix-engine-oil-oil-products-display.jpg', title: 'เปลี่ยนน้ำมันเครื่องราคาเท่าไหร่? อัปเดต 2026 พร้อมตารางเทียบทุกประเภท', excerpt: 'รวมราคาเปลี่ยนน้ำมันเครื่องปี 2026 แยกตามประเภทน้ำมันและรุ่นรถ พร้อมบอกจุดคุ้ม', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', href: 'blog-engine-oil-types.html', img: 'images/automix/automix-engine-oil-pouring-oil-03.jpg', title: 'น้ำมันเครื่องสังเคราะห์แท้ vs กึ่งสังเคราะห์ vs ธรรมดา ต่างกันยังไง', excerpt: 'เทียบน้ำมัน 3 ประเภทแบบเข้าใจง่าย ทั้งอายุการใช้งาน ราคา และใครควรใช้แบบไหน', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', href: 'blog-best-engine-oil-brand.html', img: 'images/automix/automix-engine-oil-bmw-oil-service.jpg', title: 'น้ำมันเครื่องยี่ห้อไหนดี 2026 เลือกให้เหมาะกับรถและการใช้งาน', excerpt: 'จัดกลุ่มน้ำมันเครื่องตามการใช้งานจริง ทั้งขับในเมือง เดินทางไกล และรถกระบะ', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', href: 'blog-oil-change-interval.html', img: 'images/automix/automix-engine-oil-dipstick-check.jpg', title: 'เปลี่ยนน้ำมันเครื่องทุกกี่กิโล? อัปเดตระยะที่เหมาะกับการใช้งานจริง', excerpt: 'แยกระยะเปลี่ยนตามประเภทน้ำมัน พร้อม 5 สัญญาณเตือนว่าถึงเวลาต้องเปลี่ยน', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'oil', catLabel: 'น้ำมันเครื่อง', href: 'blog-5w30-vs-5w40.html', img: 'images/automix/automix-engine-oil-pouring-oil-05.jpg', title: 'น้ำมันเครื่อง 5W-30 กับ 5W-40 ต่างกันยังไง รถเราใช้เบอร์ไหนดี', excerpt: 'อธิบายตัวเลขความหนืดแบบเข้าใจง่าย และตอบเคลียร์ว่ารถแบบไหนใช้เบอร์ไหน', date: '14 ก.ค. 2026', read: '4 นาที' },
   ];
   const filtered = cat === 'all' ? posts : posts.filter(p => p.cat === cat);
   const featured = filtered[0];
@@ -35,7 +34,7 @@ function BlogPage() {
       <Header active="blog" />
       <section className="page-header">
         <div className="container">
-          <div className="breadcrumb"><a href="index.html">หน้าแรก</a> <span>/</span> <span>บทความ</span></div>
+          <div className="breadcrumb"><a href="/">หน้าแรก</a> <span>/</span> <span>บทความ</span></div>
           <h1>บทความและ<span className="accent">ความรู้จากช่าง</span></h1>
           <p>แบ่งปันความรู้การดูแลรักษารถยนต์ เคล็ดลับจากผู้เชี่ยวชาญ และคำแนะนำที่ช่วยให้คุณเข้าใจรถของคุณมากขึ้น</p>
         </div>
@@ -51,7 +50,7 @@ function BlogPage() {
             ))}
           </div>
           {featured && (
-            <a href="blog-detail.html" className="blog-featured" style={{display:'grid',gridTemplateColumns:'1.2fr 1fr',marginBottom:32,textDecoration:'none'}}>
+            <a href={featured.href} className="blog-featured" style={{display:'grid',gridTemplateColumns:'1.2fr 1fr',marginBottom:32,textDecoration:'none'}}>
               <div className="media" style={{minHeight:360}}><img className="bg" src={featured.img} alt={featured.title} loading="lazy" /></div>
               <div className="body" style={{padding:'40px'}}>
                 <span className="blog-cat">{featured.catLabel}</span>
@@ -66,7 +65,7 @@ function BlogPage() {
           )}
           <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:16}} className="blog-list-grid">
             {rest.map((p, i) => (
-              <a key={i} href="blog-detail.html" className="blog-featured" style={{textDecoration:'none'}}>
+              <a key={i} href={p.href} className="blog-featured" style={{textDecoration:'none'}}>
                 <div className="media" style={{aspectRatio:'16/10'}}><img className="bg" src={p.img} alt={p.title} loading="lazy" /></div>
                 <div className="body" style={{padding:'24px'}}>
                   <span className="blog-cat">{p.catLabel}</span>
