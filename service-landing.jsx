@@ -148,7 +148,7 @@ function SL_Process({ steps }) {
         <div className="sec-head" style={{justifyContent:'center',textAlign:'center'}}>
           <div style={{margin:'0 auto'}}>
             <div className="sec-eyebrow" style={{justifyContent:'center'}}>กระบวนการให้บริการ</div>
-            <h2 className="sec-title" style={{margin:'0 auto'}}>ขั้นตอนการใช้บริการ<br/><span className="accent">ที่ AUTO MIX โคราช</span></h2>
+            <h2 className="sec-title" style={{margin:'0 auto'}}>ขั้นตอนการใช้บริการ<br/><span className="accent">ที่ Auto Mix Shop โคราช</span></h2>
           </div>
         </div>
         <div style={{display:'grid',gridTemplateColumns:`repeat(${s.length},1fr)`,gap:16}} className="process-grid">
@@ -238,7 +238,7 @@ function SL_ServiceArea({ d }) {
             <div className="sec-eyebrow">พื้นที่ให้บริการ</div>
             <h2 className="sec-title">{(d.serviceArea && d.serviceArea.h2) || 'ให้บริการลูกค้าทั่ว โคราช และใกล้เคียง'}</h2>
           </div>
-          <p className="sec-sub">{(d.serviceArea && d.serviceArea.sub) || 'AUTO MIX ตั้งอยู่บนถนนมิตรภาพ ใกล้แยกเทอร์มินอล ติดธนาคาร CIMB เดินทางสะดวกจากทุกพื้นที่ในนครราชสีมา'}</p>
+          <p className="sec-sub">{(d.serviceArea && d.serviceArea.sub) || 'Auto Mix Shop ตั้งอยู่บนถนนมิตรภาพ ใกล้แยกเทอร์มินอล ติดธนาคาร CIMB เดินทางสะดวกจากทุกพื้นที่ในนครราชสีมา'}</p>
         </div>
         <div style={{display:'flex',gap:10,flexWrap:'wrap'}}>
           {areas.map((a,i)=>(
@@ -294,7 +294,7 @@ function SL_Related({ related }) {
         <div className="sec-head">
           <div>
             <div className="sec-eyebrow">บริการอื่น ๆ</div>
-            <h2 className="sec-title">บริการอื่นที่ <span className="accent">AUTO MIX โคราช</span></h2>
+            <h2 className="sec-title">บริการอื่นที่ <span className="accent">Auto Mix Shop โคราช</span></h2>
           </div>
           <p className="sec-sub"><a href="services.html" style={{color:'var(--accent)'}}>ดูบริการทั้งหมด →</a></p>
         </div>
