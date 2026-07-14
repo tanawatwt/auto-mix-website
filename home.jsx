@@ -33,7 +33,7 @@ function Hero({ variant = 'split' }) {
             <img src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="" aria-hidden="true" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',zIndex:0}} />
             <div style={{position:'absolute',inset:0,background:'linear-gradient(90deg, rgba(10,10,10,.94) 28%, rgba(10,10,10,.55) 60%, rgba(10,10,10,.25) 100%)',zIndex:1}}></div>
             <div style={{maxWidth: 640, position: 'relative', zIndex: 2}}>
-              <div className="hero-tagline"><span className="hero-tagline-dot"></span>AUTO MIX — ออโต้มิกซ์ โคราช</div>
+              <div className="hero-tagline"><span className="hero-tagline-dot"></span>Auto Mix Shop — ออโต้มิกซ์ โคราช</div>
               <h1>ศูนย์บริการ<br/>รถยนต์มาตรฐาน<br/><span className="accent">ครบวงจร</span></h1>
               <p className="hero-sub">ช่างผู้มีประสบการณ์สูง ใช้ผลิตภัณฑ์มาตรฐานระดับโลก แจ้งราคาตรงไปตรงมา ไม่มีบวกเพิ่ม</p>
               <div className="hero-ctas">
@@ -83,7 +83,7 @@ function Hero({ variant = 'split' }) {
           </div>
         </div>
         <div className="hero-visual">
-          <img className="bg" src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="AUTO MIX โคราช — ศูนย์บริการรถยนต์" loading="eager" width="1080" height="720" fetchpriority="high" />
+          <img className="bg" src="images/automix/automix-engine-oil-bmw-on-lift-01.jpg" alt="Auto Mix Shop โคราช — ศูนย์บริการรถยนต์" loading="eager" width="1080" height="720" fetchpriority="high" />
           <div className="hero-visual-overlay"></div>
           <div className="hero-visual-badge"><span className="dot"></span>เปิดให้บริการวันนี้</div>
           <div className="hero-visual-tag">
@@ -111,7 +111,7 @@ function WhyChoose() {
       <div className="container">
         <div className="sec-head">
           <div>
-            <div className="sec-eyebrow">ทำไมต้อง AUTO MIX</div>
+            <div className="sec-eyebrow">ทำไมต้อง Auto Mix Shop</div>
             <h2 className="sec-title">เหตุผลที่ลูกค้าโคราช<br/>เลือกดูแลรถที่นี่</h2>
           </div>
           <p className="sec-sub">เรามุ่งเน้นความซื่อตรง คุณภาพงาน และผลิตภัณฑ์ที่ดีที่สุด เพื่อให้รถของคุณได้รับการดูแลอย่างที่ควรจะเป็น</p>
@@ -286,7 +286,7 @@ function Expertise() {
 
 function GalleryPreview() {
   const items = [
-    { src: 'images/automix/automix-engine-oil-bmw-on-lift-02.jpg', cls: 'wide tall', label: 'Workshop — AUTO MIX' },
+    { src: 'images/automix/automix-engine-oil-bmw-on-lift-02.jpg', cls: 'wide tall', label: 'Workshop — Auto Mix Shop' },
     { src: 'images/automix/automix-engine-oil-pouring-oil-07.jpg', cls: '', label: 'เปลี่ยนน้ำมันเครื่อง' },
     { src: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-03.jpg', cls: '', label: 'ขัดไฟหน้ารถยนต์' },
     { src: 'images/automix/automix-engine-oil-oil-products-display.jpg', cls: 'wide', label: 'LIQUI MOLY display' },
@@ -330,7 +330,7 @@ function Testimonials() {
             <div className="sec-eyebrow">ลูกค้าของเรา</div>
             <h2 className="sec-title">เสียงจริงจากลูกค้า<br/><span className="accent">ที่ไว้ใจเรา</span></h2>
           </div>
-          <p className="sec-sub">4.1K+ ครอบครัวในโคราชเลือกให้ AUTO MIX ดูแลรถของพวกเขา</p>
+          <p className="sec-sub">4.1K+ ครอบครัวในโคราชเลือกให้ Auto Mix Shop ดูแลรถของพวกเขา</p>
         </div>
         <div className="tst-grid">
           {reviews.map((r, i) => (

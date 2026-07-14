@@ -5,7 +5,7 @@ function ServiceHero() {
     <section className="page-header">
       <div className="container">
         <div className="breadcrumb"><a href="index.html">หน้าแรก</a> <span>/</span> <span>บริการ</span></div>
-        <h1>บริการของ <span className="accent">AUTO MIX โคราช</span></h1>
+        <h1>บริการของ <span className="accent">Auto Mix Shop โคราช</span></h1>
         <p>ศูนย์บริการรถยนต์มาตรฐาน ดูแลครบทุกระบบ ใช้ผลิตภัณฑ์ระดับโลก โดยช่างผู้มีประสบการณ์สูงสำหรับรถยุโรปและรถเอเชียทุกรุ่น</p>
       </div>
     </section>
@@ -99,7 +99,7 @@ function ProcessSection() {
         <div className="sec-head" style={{justifyContent:'center',textAlign:'center'}}>
           <div style={{margin:'0 auto'}}>
             <div className="sec-eyebrow" style={{justifyContent:'center'}}>กระบวนการให้บริการ</div>
-            <h2 className="sec-title" style={{margin:'0 auto'}}>ขั้นตอนการใช้บริการ<br/><span className="accent">ที่ AUTO MIX โคราช</span></h2>
+            <h2 className="sec-title" style={{margin:'0 auto'}}>ขั้นตอนการใช้บริการ<br/><span className="accent">ที่ Auto Mix Shop โคราช</span></h2>
           </div>
         </div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(5,1fr)',gap:16}} className="process-grid">

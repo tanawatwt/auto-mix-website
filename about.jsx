@@ -28,7 +28,7 @@ function AboutPage() {
       <section className="page-header">
         <div className="container">
           <div className="breadcrumb"><a href="index.html">หน้าแรก</a> <span>/</span> <span>เกี่ยวกับเรา</span></div>
-          <h1>เกี่ยวกับ <span className="accent">AUTO MIX</span></h1>
+          <h1>เกี่ยวกับ <span className="accent">Auto Mix Shop</span></h1>
           <p>ศูนย์บริการรถยนต์มาตรฐานในโคราช ที่ลูกค้ามากกว่า 4.1K ไว้วางใจให้ดูแลรถของพวกเขา</p>
         </div>
       </section>
@@ -40,7 +40,7 @@ function AboutPage() {
               <div className="sec-eyebrow">เรื่องราวของเรา</div>
               <h2 className="sec-title" style={{fontSize:'clamp(28px,3vw,40px)'}}>ศูนย์บริการรถยนต์ที่<br/><span className="accent">ใส่ใจทุกคัน</span></h2>
               <p style={{color:'var(--text-dim)',fontSize:16,marginBottom:20,textWrap:'pretty'}}>
-                AUTO MIX เริ่มต้นจากความตั้งใจที่จะเป็นศูนย์บริการรถยนต์ที่ลูกค้าโคราชไว้วางใจได้ ด้วยช่างผู้มีประสบการณ์ ผลิตภัณฑ์มาตรฐานระดับโลก และการบริการที่ซื่อสัตย์โปร่งใส
+                Auto Mix Shop เริ่มต้นจากความตั้งใจที่จะเป็นศูนย์บริการรถยนต์ที่ลูกค้าโคราชไว้วางใจได้ ด้วยช่างผู้มีประสบการณ์ ผลิตภัณฑ์มาตรฐานระดับโลก และการบริการที่ซื่อสัตย์โปร่งใส
               </p>
               <p style={{color:'var(--text-dim)',fontSize:16,marginBottom:28,textWrap:'pretty'}}>
                 เรามุ่งเน้นการดูแลรถเสมือนเป็นรถของเราเอง แนะนำสิ่งที่เหมาะสมกับรถของลูกค้าแต่ละคัน แจ้งราคาก่อนเริ่มงานทุกครั้ง และไม่เสนอบริการที่ลูกค้าไม่จำเป็น
@@ -52,12 +52,12 @@ function AboutPage() {
               </div>
             </div>
             <div style={{aspectRatio:'4/5',borderRadius:14,overflow:'hidden',border:'1px solid var(--border)',position:'relative'}}>
-              <img src="images/automix/automix-engine-oil-oil-products-display.jpg" alt="ทีม AUTO MIX โคราช" loading="lazy" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
+              <img src="images/automix/automix-engine-oil-oil-products-display.jpg" alt="ทีม Auto Mix Shop โคราช" loading="lazy" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',display:'block'}} />
               <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55) 100%)',pointerEvents:'none'}}></div>
               <div style={{position:'absolute',bottom:20,left:20,right:20,display:'flex',alignItems:'flex-end',justifyContent:'space-between',gap:16,zIndex:2}}>
                 <div>
-                  <div style={{fontSize:12,fontWeight:700,color:'var(--accent)',letterSpacing:'.12em',textTransform:'uppercase',marginBottom:4}}>AUTO MIX โคราช</div>
-                  <div style={{fontSize:18,fontWeight:700,fontFamily:'Kanit',color:'#fff'}}>ครอบครัว AUTO MIX</div>
+                  <div style={{fontSize:12,fontWeight:700,color:'var(--accent)',letterSpacing:'.12em',textTransform:'uppercase',marginBottom:4}}>Auto Mix Shop โคราช</div>
+                  <div style={{fontSize:18,fontWeight:700,fontFamily:'Kanit',color:'#fff'}}>ครอบครัว Auto Mix Shop</div>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ function AboutPage() {
           <div className="sec-head">
             <div>
               <div className="sec-eyebrow">คุณค่าที่เรายึดถือ</div>
-              <h2 className="sec-title">สิ่งที่ทำให้<br/><span className="accent">AUTO MIX แตกต่าง</span></h2>
+              <h2 className="sec-title">สิ่งที่ทำให้<br/><span className="accent">Auto Mix Shop แตกต่าง</span></h2>
             </div>
           </div>
           <div style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:16}} className="values-grid">

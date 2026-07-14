@@ -15,7 +15,7 @@ function ContactPage() {
       <section className="page-header">
         <div className="container">
           <div className="breadcrumb"><a href="index.html">หน้าแรก</a> <span>/</span> <span>ติดต่อ</span></div>
-          <h1>ติดต่อ <span className="accent">AUTO MIX</span></h1>
+          <h1>ติดต่อ <span className="accent">Auto Mix Shop</span></h1>
           <p>จองคิว สอบถามราคา หรือปรึกษาช่าง ได้หลายช่องทาง เปิดทุกวัน 08:30 – 17:30 น.</p>
         </div>
       </section>

@@ -18,7 +18,7 @@ function GalleryPage() {
     { id: 'products', label: 'ผลิตภัณฑ์' },
   ];
   const all = [
-    { cat: 'workshop', label: 'หน้าร้าน AUTO MIX', size: 'wide tall', src: 'images/automix/automix-engine-oil-bmw-on-lift-01.jpg' },
+    { cat: 'workshop', label: 'หน้าร้าน Auto Mix Shop', size: 'wide tall', src: 'images/automix/automix-engine-oil-bmw-on-lift-01.jpg' },
     { cat: 'oil', label: 'เปลี่ยนน้ำมันเครื่อง LIQUI MOLY', size: '', src: 'images/automix/automix-engine-oil-pouring-oil-03.jpg' },
     { cat: 'headlight', label: 'ขัดไฟหน้า ก่อน-หลัง', size: '', src: 'images/automix/automix-headlight-restoration-before-after-comparison-01.jpg' },
     { cat: 'products', label: 'LIQUI MOLY lineup', size: 'wide', src: 'images/automix/automix-engine-oil-oil-products-display.jpg' },
@@ -27,11 +27,11 @@ function GalleryPage() {
     { cat: 'oil', label: 'ZIC X7 Fully Synthetic', size: '', src: 'images/automix/automix-engine-oil-bmw-oil-service.jpg' },
     { cat: 'headlight', label: 'ขัดไฟหน้าใสเหมือนใหม่', size: '', src: 'images/automix/automix-headlight-restoration-restored-clear-lens-after-01.jpg' },
     { cat: 'products', label: 'ZIC X7 + กรองน้ำมัน', size: 'tall', src: 'images/automix/automix-engine-oil-oil-filter-products.jpg' },
-    { cat: 'workshop', label: 'ทีมช่าง AUTO MIX', size: 'wide', src: 'images/automix/automix-engine-oil-engine-bay-service.jpg' },
+    { cat: 'workshop', label: 'ทีมช่าง Auto Mix Shop', size: 'wide', src: 'images/automix/automix-engine-oil-engine-bay-service.jpg' },
     { cat: 'suspension', label: 'ซ่อมเพลาขับ', size: '', src: 'images/automix/automix-suspension-cv-joint-underbody-01.jpg' },
     { cat: 'oil', label: 'เทน้ำมันเครื่อง', size: '', src: 'images/automix/automix-engine-oil-pouring-oil-02.jpg' },
     { cat: 'oil', label: 'ฟรัชชิ่งเกียร์ทั้งระบบ', size: '', src: 'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg' },
-    { cat: 'workshop', label: 'หน้าร้าน AUTO MIX โคราช', size: '', src: 'images/automix/automix-engine-oil-bmw-service-consult.jpg' },
+    { cat: 'workshop', label: 'หน้าร้าน Auto Mix Shop โคราช', size: '', src: 'images/automix/automix-engine-oil-bmw-service-consult.jpg' },
     { cat: 'products', label: 'ZIC CVTF Multi', size: '', src: 'images/automix/automix-gearbox-flush-atf-products-display.jpg' },
     { cat: 'suspension', label: 'ตรวจใต้ท้องรถ', size: 'wide', src: 'images/automix/automix-suspension-underbody-inspection.jpg' },
     { cat: 'oil', label: 'เปลี่ยนถ่าย LIQUI MOLY', size: '', src: 'images/automix/automix-engine-oil-pouring-oil-01.jpg' },
@@ -53,7 +53,7 @@ function GalleryPage() {
         <div className="container">
           <div className="breadcrumb"><a href="index.html">หน้าแรก</a> <span>/</span> <span>ผลงาน</span></div>
           <h1>ผลงานและ<span className="accent">หน้าร้าน</span></h1>
-          <p>ภาพจริงจากการให้บริการ ลูกค้าที่ไว้ใจ และบรรยากาศในร้าน AUTO MIX โคราช</p>
+          <p>ภาพจริงจากการให้บริการ ลูกค้าที่ไว้ใจ และบรรยากาศในร้าน Auto Mix Shop โคราช</p>
         </div>
       </section>
       <section className="sec">

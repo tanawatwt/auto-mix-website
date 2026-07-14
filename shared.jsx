@@ -62,7 +62,7 @@ function Header({ active }) {
     <header className="header">
       <div className="container">
         <a href="/" className="brand">
-          <img src="assets/logo.jpg" alt="AUTO MIX — ออโต้มิกซ์ ศูนย์บริการรถยนต์โคราช" className="brand-logo" />
+          <img src="assets/logo.jpg" alt="Auto Mix Shop — ออโต้มิกซ์ ศูนย์บริการรถยนต์โคราช" className="brand-logo" />
         </a>
         <nav className={`nav ${open ? 'open' : ''}`}>
           {links.map(l => l.children ? (
@@ -137,7 +137,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <img src="assets/logo.jpg" alt="AUTO MIX" />
+            <img src="assets/logo.jpg" alt="Auto Mix Shop" />
             <p>ศูนย์บริการรถยนต์มาตรฐาน โคราช เปลี่ยนน้ำมันเครื่อง ช่วงล่าง ฟรัชชิ่งเกียร์ ขัดไฟหน้า และจำหน่ายผลิตภัณฑ์ดูแลรถยนต์ โดยช่างผู้มีประสบการณ์</p>
             <div className="footer-social">
               <a href="#" aria-label="Facebook"><Icon.FB /></a>
@@ -179,7 +179,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div>© 2026 AUTO MIX — ออโต้มิกซ์. สงวนลิขสิทธิ์.</div>
+          <div>© 2026 Auto Mix Shop — ออโต้มิกซ์. สงวนลิขสิทธิ์.</div>
           <div>ศูนย์บริการรถยนต์โคราช • เปลี่ยนน้ำมันเครื่องโคราช • ซ่อมช่วงล่างโคราช</div>
         </div>
       </div>

@@ -22,7 +22,7 @@ function BlogDetailPage() {
             <h1 style={{fontSize:'clamp(32px,4vw,52px)',lineHeight:1.1,margin:'14px 0 20px',textWrap:'balance'}}>เลือกน้ำมันเครื่องอย่างไรให้เหมาะกับรถยุโรปและรถเอเชีย</h1>
             <div style={{display:'flex',gap:20,color:'var(--text-muted)',fontSize:14,flexWrap:'wrap'}}>
               <span>24 เมษายน 2026</span>
-              <span>โดย ทีมช่าง AUTO MIX</span>
+              <span>โดย ทีมช่าง Auto Mix Shop</span>
               <span>อ่าน 6 นาที</span>
             </div>
           </div>
@@ -53,7 +53,7 @@ function BlogDetailPage() {
                   <Icon.Shield />
                 </div>
                 <div>
-                  <div style={{fontSize:13,fontWeight:700,color:'var(--accent)',letterSpacing:'.08em',textTransform:'uppercase',marginBottom:8}}>คำแนะนำจาก AUTO MIX</div>
+                  <div style={{fontSize:13,fontWeight:700,color:'var(--accent)',letterSpacing:'.08em',textTransform:'uppercase',marginBottom:8}}>คำแนะนำจาก Auto Mix Shop</div>
                   <p style={{margin:0,color:'var(--text)',textWrap:'pretty'}}>
                     แนะนำให้ตรวจสอบสเปคน้ำมันที่คู่มือรถ และปรึกษาช่างผู้มีประสบการณ์ก่อนเลือกใช้ การใช้น้ำมันผิดประเภทอาจส่งผลต่อประสิทธิภาพ ค่าความประหยัดน้ำมัน และการปกป้องเครื่องยนต์ในระยะยาว
                   </p>
