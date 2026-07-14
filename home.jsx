@@ -89,7 +89,7 @@ function Hero({ variant = 'split' }) {
           <div className="hero-visual-tag">
             <div>
               <h4>ถนนมิตรภาพ ใกล้แยกเทอร์มินอล</h4>
-              <p>353/1 ต.ในเมือง อ.เมือง นครราชสีมา</p>
+              <p>353/1 ถ.มิตรภาพ ต.ในเมือง อ.เมือง จ.นครราชสีมา 30000</p>
             </div>
             <a href="contact.html" className="hero-visual-arrow"><Icon.ArrowRight /></a>
           </div>

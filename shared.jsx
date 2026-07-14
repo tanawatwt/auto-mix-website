@@ -28,7 +28,7 @@ function TopBar() {
       <div className="container">
         <div className="info-items">
           <div className="info-item"><Icon.Clock /> <span>เปิดทุกวัน 08:30 – 17:30 น.</span></div>
-          <div className="info-item"><Icon.Map /> <span>353/1 ถ.มิตรภาพ อ.เมือง จ.นครราชสีมา</span></div>
+          <div className="info-item"><Icon.Map /> <span>353/1 ถ.มิตรภาพ ต.ในเมือง อ.เมือง จ.นครราชสีมา 30000</span></div>
           <div className="info-item"><Icon.Email /> <span>automix.amg@gmail.com</span></div>
         </div>
         <div className="socials">
