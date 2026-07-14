@@ -13,7 +13,7 @@ function BlogPage() {
     { id: 'all', label: 'ทั้งหมด' },
     { id: 'oil', label: 'น้ำมันเครื่อง' },
     { id: 'suspension', label: 'ช่วงล่าง' },
-    { id: 'gear', label: 'ฟรัชชิ่งเกียร์' },
+    { id: 'gear', label: 'ฟลัชชิ่งเกียร์' },
     { id: 'headlight', label: 'ขัดไฟหน้า' },
     { id: 'care', label: 'ดูแลรถ' },
   ];
@@ -28,6 +28,16 @@ function BlogPage() {
     { cat: 'suspension', catLabel: 'ช่วงล่าง', href: 'blog-suspension-parts.html', img: 'images/automix/automix-suspension-suspension-part-assembly.jpg', title: 'ช่วงล่างรถยนต์มีอะไรบ้าง? รู้จักทุกชิ้นส่วนแบบเข้าใจง่าย', excerpt: 'รู้จักโช้คอัพ สปริง ลูกหมาก ปีกนก บูช พร้อมหน้าที่และอาการเมื่อเริ่มเสีย', date: '14 ก.ค. 2026', read: '7 นาที' },
     { cat: 'suspension', catLabel: 'ช่วงล่าง', href: 'blog-ball-joint-symptoms.html', img: 'images/automix/automix-suspension-suspension-arm-service.jpg', title: 'ลูกหมากหลวมคืออะไร อาการเป็นยังไง อันตรายแค่ไหน', excerpt: 'อาการลูกหมากหลวม เสียงดังตอนเลี้ยว/ตกหลุม ระดับอันตราย และราคาซ่อม', date: '14 ก.ค. 2026', read: '5 นาที' },
     { cat: 'suspension', catLabel: 'ช่วงล่าง', href: 'blog-suspension-noise-symptoms.html', img: 'images/automix/automix-suspension-underbody-work.jpg', title: '8 อาการช่วงล่างมีปัญหา + เสียงดังใต้ท้องรถ บอกอะไรได้บ้าง', excerpt: 'ตารางจับคู่เสียง/อาการกับชิ้นส่วนที่น่าจะเสีย ให้วินิจฉัยเบื้องต้นก่อนเข้าอู่', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'gear', catLabel: 'ฟลัชชิ่งเกียร์', href: 'blog-transmission-oil-interval.html', img: 'images/automix/automix-gearbox-flush-pouring-atf-fluid.jpg', title: 'เปลี่ยนน้ำมันเกียร์ทุกกี่กิโล? ออโต้กับธรรมดาต่างกันแค่ไหน', excerpt: 'แยกระยะเปลี่ยนออโต้/ธรรมดา พร้อมเทียบถ่ายปกติกับฟลัชชิ่งเกียร์', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'gear', catLabel: 'ฟลัชชิ่งเกียร์', href: 'blog-transmission-flush-guide.html', img: 'images/automix/automix-gearbox-flush-atf-flush-machine-01.jpg', title: 'ฟลัชชิ่งเกียร์คืออะไร คุ้มไหม รถออโต้ควรทำเมื่อไหร่', excerpt: 'อธิบายกระบวนการฟลัชชิ่ง ต่างจากถ่ายปกติ ข้อดี-ข้อควรระวัง', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'gear', catLabel: 'ฟลัชชิ่งเกียร์', href: 'blog-gear-jerk.html', img: 'images/automix/automix-gearbox-flush-transmission-inspection.jpg', title: 'เกียร์กระตุกเกิดจากอะไร อาการแบบนี้แก้ยังไง', excerpt: 'ไล่สาเหตุจากน้ำมันเกียร์เสื่อมถึงปัญหาภายใน พร้อมวิธีแก้และป้องกัน', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'gear', catLabel: 'ฟลัชชิ่งเกียร์', href: 'blog-auto-transmission-symptoms.html', img: 'images/automix/automix-gearbox-flush-mercedes-on-lift.jpg', title: '7 อาการเกียร์ออโต้เสีย สังเกตก่อนบานปลาย', excerpt: 'เช็กลิสต์อาการเกียร์ออโต้เสีย แยกอาการที่ดูแลน้ำมันได้กับที่ต้องเข้าศูนย์', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'gear', catLabel: 'ฟลัชชิ่งเกียร์', href: 'blog-transmission-flush-price.html', img: 'images/automix/automix-gearbox-flush-atf-products-display.jpg', title: 'ฟลัชชิ่งเกียร์ราคาเท่าไหร่ คุ้มกว่าถ่ายปกติไหม', excerpt: 'ตารางราคาฟลัชชิ่งเกียร์ เทียบกับถ่ายปกติ พร้อมบอกจุดคุ้ม', date: '14 ก.ค. 2026', read: '4 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', href: 'blog-headlight-polish-price.html', img: 'images/automix/automix-headlight-restoration-before-after-comparison-01.jpg', title: 'ขัดไฟหน้ารถราคาเท่าไหร่ ทำที่ไหนดี คุ้มกว่าทำเองไหม', excerpt: 'ราคาขัดไฟหน้าแยกตามวิธี ขัดอย่างเดียว vs ขัด+เคลือบ และทำเองกับร้าน', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', href: 'blog-diy-headlight-polish.html', img: 'images/automix/automix-headlight-restoration-technician-sanding-lens.jpg', title: 'วิธีขัดไฟหน้ารถเองที่บ้าน ทำตามได้จริง + ข้อควรระวัง', excerpt: 'สอน step-by-step ขัดไฟหน้าเอง พร้อมข้อควรระวังและเรื่องการเคลือบ UV', date: '14 ก.ค. 2026', read: '6 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', href: 'blog-yellow-headlight-fix.html', img: 'images/automix/automix-headlight-restoration-yellowed-lens-before.jpg', title: 'ไฟหน้ารถเหลือง แก้ยังไงให้กลับมาใสเหมือนใหม่', excerpt: 'สาเหตุและ 5 วิธีแก้ไฟหน้าเหลืองจากง่ายไปยาก พร้อมวิธีกันเหลืองซ้ำ', date: '14 ก.ค. 2026', read: '5 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', href: 'blog-headlight-coating-vs-polish.html', img: 'images/automix/automix-headlight-restoration-technician-coating-lens.jpg', title: 'เคลือบไฟหน้า vs ขัดไฟหน้า ต่างกันยังไง อันไหนคุ้มกว่า', excerpt: 'ตารางเทียบขัด vs เคลือบ ความทน ราคา และควรทำอย่างเดียวหรือคู่กัน', date: '14 ก.ค. 2026', read: '4 นาที' },
+    { cat: 'headlight', catLabel: 'ขัดไฟหน้า', href: 'blog-hazy-headlight-causes.html', img: 'images/automix/automix-headlight-restoration-hazy-yellowed-lens-before.jpg', title: 'ไฟหน้ารถขุ่น มัว เกิดจากอะไร แก้ได้ด้วยการขัดไหม', excerpt: 'สาเหตุไฟหน้าขุ่นมัว แยกเคสที่ขัดหายกับเคสที่ต้องเปลี่ยนโคม', date: '14 ก.ค. 2026', read: '4 นาที' },
   ];
   const filtered = cat === 'all' ? posts : posts.filter(p => p.cat === cat);
   const featured = filtered[0];
